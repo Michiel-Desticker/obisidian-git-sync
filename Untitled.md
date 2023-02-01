@@ -9,3 +9,12 @@
 | `ls directory`  | show directory |
 | `How do you do` | how do you do               |
 
+```bash
+$user = "Michiel"
+Hello "${user}"
+
+```
+
+
+
+
