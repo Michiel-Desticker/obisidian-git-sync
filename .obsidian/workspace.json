@@ -19,8 +19,12 @@
             "id": "1cdb67633d070b73",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Cybersecurity-Virtualisation/Untitled.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ],
@@ -90,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Cybersecurity-Virtualisation/Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,6 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Cybersecurity-Virtualisation/Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +133,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Cybersecurity-Virtualisation/Untitled.md"
+              }
             }
           },
           {
@@ -164,8 +172,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "d43cbed193659913",
+  "active": "1cdb67633d070b73",
   "lastOpenFiles": [
+    "Cybersecurity-Virtualisation/Attachments/Pasted image 20230201220523.jpg",
+    "Cybersecurity-Virtualisation/Untitled.md",
     "Cybersecurity-Virtualisation/Test.md",
     "Cybersecurity-Virtualisation/Images/test.png",
     "Cybersecurity-Virtualisation/Images/stock.jpg",
@@ -173,8 +183,6 @@
     "Cybersecurity-Virtualisation/Images/stock.jpg 1.jpg",
     "obsidian-git-sync/Pasted.md",
     "Images/testimage.png.md",
-    "Cybersecurity-Virtualisation/Images/testimage.png.jpg",
-    "Untitled.md",
-    "obsidian-git-sync/Pasted 1.md"
+    "Cybersecurity-Virtualisation/Images/testimage.png.jpg"
   ]
 }
