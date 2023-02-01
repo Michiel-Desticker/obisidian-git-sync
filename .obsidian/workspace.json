@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "7e390d39cffa8fcb",
+        "id": "047e209de4e3449a",
         "type": "tabs",
         "children": [
           {
-            "id": "f859033976855f62",
+            "id": "85817f8a18e14a06",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -16,15 +16,11 @@
             }
           },
           {
-            "id": "8e135d4fcc7279ec",
+            "id": "1cdb67633d070b73",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cybersecurity-Virtualisation/Test.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ],
@@ -94,7 +90,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cybersecurity-Virtualisation/Test.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +106,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cybersecurity-Virtualisation/Test.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,9 +127,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Cybersecurity-Virtualisation/Test.md"
-              }
+              "state": {}
             }
           },
           {
@@ -172,17 +164,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "8e135d4fcc7279ec",
+  "active": "9eb2df65fbc1d65e",
   "lastOpenFiles": [
+    "Cybersecurity-Virtualisation/Images/test.png",
+    "Cybersecurity-Virtualisation/Images/stock.jpg",
+    "Cybersecurity-Virtualisation/Test.md",
+    "Cybersecurity-Virtualisation/Images/test.png 1.png",
+    "Cybersecurity-Virtualisation/Images/stock.jpg 1.jpg",
     "obsidian-git-sync/Pasted.md",
     "Images/testimage.png.md",
-    "Cybersecurity-Virtualisation/Test.md",
     "Cybersecurity-Virtualisation/Images/testimage.png.jpg",
     "Untitled.md",
-    "obsidian-git-sync/Pasted 1.md",
-    "_95146618_bills.jpg",
-    "Pasted image 20230201212351.png",
-    "Pasted image 20230201212243.png",
-    "Pasted image 20230201203907.png"
+    "obsidian-git-sync/Pasted 1.md"
   ]
 }

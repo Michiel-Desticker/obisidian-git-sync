@@ -1,9 +1,0 @@
-
-![Image](./Images/stock.jpg)
-
-
-
-
-
-
-
