@@ -1,1 +1,1 @@
-![[../Attachments/Pasted image 20230201220906.jpg]]
+![[/Attachments/Pasted image 20230201220906.jpg]]
