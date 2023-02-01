@@ -1,1 +1,1 @@
-![[Screenshot_20230109_204459.png]]
+![[Screenshot_20230109_204459.png]]![[_95146618_bills.jpg]]
