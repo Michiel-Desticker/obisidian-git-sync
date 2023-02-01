@@ -19,12 +19,8 @@
             "id": "1cdb67633d070b73",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cybersecurity-Virtualisation/Untitled.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ],
@@ -94,7 +90,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cybersecurity-Virtualisation/Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +106,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cybersecurity-Virtualisation/Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,9 +127,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Cybersecurity-Virtualisation/Untitled.md"
-              }
+              "state": {}
             }
           },
           {
@@ -174,8 +166,8 @@
   },
   "active": "1cdb67633d070b73",
   "lastOpenFiles": [
-    "Attachments/testimage.jpg",
     "Cybersecurity-Virtualisation/Untitled.md",
+    "Attachments/testimage.jpg",
     "Cybersecurity-Virtualisation/Attachments/image.jpg",
     "Cybersecurity-Virtualisation/Test.md",
     "Cybersecurity-Virtualisation/Images/test.png",
