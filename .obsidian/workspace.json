@@ -11,9 +11,11 @@
             "id": "f859033976855f62",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Pasted image 20230201203907.png"
+                "file": "Untitled.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -83,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Pasted image 20230201203907.png",
+                "file": "Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Pasted image 20230201203907.png",
+                "file": "Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Pasted image 20230201203907.png"
+                "file": "Untitled.md"
               }
             }
           },
@@ -163,6 +165,8 @@
   },
   "active": "f859033976855f62",
   "lastOpenFiles": [
+    "Pasted image 20230201203907.png",
+    "README.md",
     "Untitled.md",
     "Untitled 1.md",
     "www.Google.com.md",
