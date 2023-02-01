@@ -19,22 +19,16 @@
             "id": "1cdb67633d070b73",
             "type": "leaf",
             "state": {
-              "type": "image",
-              "state": {
-                "file": "Attachments/Testimage.png"
-              }
+              "type": "empty",
+              "state": {}
             }
           },
           {
             "id": "d9dfaf5d574d873a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cybersecurity-Virtualisation/Untitled.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ],
@@ -104,7 +98,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cybersecurity-Virtualisation/Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +114,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cybersecurity-Virtualisation/Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,9 +135,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Cybersecurity-Virtualisation/Untitled.md"
-              }
+              "state": {}
             }
           },
           {
@@ -182,7 +172,7 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "d9dfaf5d574d873a",
+  "active": "9eb2df65fbc1d65e",
   "lastOpenFiles": [
     "Attachments/Testimage.png",
     "Cybersecurity-Virtualisation/Untitled.md",
