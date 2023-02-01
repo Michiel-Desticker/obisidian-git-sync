@@ -1,3 +1,4 @@
 ![](/Attachments/testimage.jpg)
 
-![[/Attachments/testimage2.png]]
+![](/Attachments/testimage2.png)
+
