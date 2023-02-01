@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "651e2a421aa8ceaf",
+        "id": "cb0aa21d9b84d9eb",
         "type": "tabs",
         "children": [
           {
-            "id": "a8c23c5bc0248f6c",
+            "id": "8e994f9401c75d3d",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Computer Networks III/Test file.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Computer Networks III/Test file.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Computer Networks III/Test file.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Computer Networks III/Test file.md"
+              }
             }
           },
           {
@@ -155,7 +163,7 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "a8c23c5bc0248f6c",
+  "active": "8e994f9401c75d3d",
   "lastOpenFiles": [
     "Untitled.md",
     "Test note.md"
