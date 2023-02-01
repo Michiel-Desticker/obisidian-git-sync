@@ -11,15 +11,26 @@
             "id": "f859033976855f62",
             "type": "leaf",
             "state": {
+              "type": "image",
+              "state": {
+                "file": "Cybersecurity-Virtualisation/Images/testimage.png.jpg"
+              }
+            }
+          },
+          {
+            "id": "8e135d4fcc7279ec",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
-                "file": "obsidian-git-sync/Pasted.md",
+                "file": "Cybersecurity-Virtualisation/Test.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "obsidian-git-sync/Pasted.md",
+                "file": "Cybersecurity-Virtualisation/Test.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "obsidian-git-sync/Pasted.md",
+                "file": "Cybersecurity-Virtualisation/Test.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "obsidian-git-sync/Pasted.md"
+                "file": "Cybersecurity-Virtualisation/Test.md"
               }
             }
           },
@@ -163,12 +174,12 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "f859033976855f62",
+  "active": "9eb2df65fbc1d65e",
   "lastOpenFiles": [
-    "Pasted image 20230201214634.jpg",
-    "obsidian-git-sync/Pasted 1.md",
+    "Cybersecurity-Virtualisation/Images/testimage.png.jpg",
     "Untitled.md",
     "obsidian-git-sync/Pasted.md",
+    "obsidian-git-sync/Pasted 1.md",
     "_95146618_bills.jpg",
     "Pasted image 20230201212351.png",
     "Pasted image 20230201212243.png",
