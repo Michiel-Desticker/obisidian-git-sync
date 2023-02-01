@@ -11,11 +11,9 @@
             "id": "f859033976855f62",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Untitled.md",
-                "mode": "source",
-                "source": false
+                "file": "_95146618_bills.jpg"
               }
             }
           }
@@ -85,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled.md",
+                "file": "_95146618_bills.jpg",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Untitled.md",
+                "file": "_95146618_bills.jpg",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Untitled.md"
+                "file": "_95146618_bills.jpg"
               }
             }
           },
@@ -165,8 +163,8 @@
   },
   "active": "f859033976855f62",
   "lastOpenFiles": [
-    "Pasted image 20230201212351.png",
     "Untitled.md",
+    "Pasted image 20230201212351.png",
     "Pasted image 20230201212243.png",
     "Pasted image 20230201203907.png",
     "README.md",
