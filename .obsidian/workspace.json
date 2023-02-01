@@ -11,11 +11,9 @@
             "id": "f859033976855f62",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Untitled.md",
-                "mode": "source",
-                "source": false
+                "file": "Pasted image 20230201203907.png"
               }
             }
           }
@@ -85,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled.md",
+                "file": "Pasted image 20230201203907.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Untitled.md",
+                "file": "Pasted image 20230201203907.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Untitled.md"
+                "file": "Pasted image 20230201203907.png"
               }
             }
           },
@@ -165,9 +163,9 @@
   },
   "active": "f859033976855f62",
   "lastOpenFiles": [
+    "Untitled.md",
     "Untitled 1.md",
     "www.Google.com.md",
-    "Untitled.md",
     "Google.com.md",
     "Computer Networks III/Test file.md",
     "Test note.md"
