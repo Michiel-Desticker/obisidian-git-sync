@@ -2,4 +2,8 @@
 [Obsidian](obsidian://open?vault=obisidian-git-sync&file=_95146618_bills.jpg)
 
 
+[["C:\Users\michi\OneDrive\Bureaublad\_95146618_bills.jpg"]]
+
+[]("C:\Users\michi\OneDrive\Bureaublad\_95146618_bills.jpg")
+
 
