@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "047e209de4e3449a",
+        "id": "e6d454767d8300c8",
         "type": "tabs",
         "children": [
           {
-            "id": "85817f8a18e14a06",
+            "id": "0f39231c951a420f",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "1cdb67633d070b73",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "d9dfaf5d574d873a",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Untitled.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Untitled.md"
+              }
             }
           },
           {
@@ -172,17 +163,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "9eb2df65fbc1d65e",
+  "active": "0f39231c951a420f",
   "lastOpenFiles": [
-    "Attachments/Testimage.png",
+    "README.md",
+    "Untitled.md",
     "Cybersecurity-Virtualisation/Untitled.md",
+    "Attachments/Testimage.png",
     "Attachments/testimage.jpg",
     "Cybersecurity-Virtualisation/Attachments/image.jpg",
     "Cybersecurity-Virtualisation/Test.md",
     "Cybersecurity-Virtualisation/Images/test.png",
     "Cybersecurity-Virtualisation/Images/stock.jpg",
-    "Cybersecurity-Virtualisation/Images/test.png 1.png",
-    "Cybersecurity-Virtualisation/Images/stock.jpg 1.jpg",
-    "obsidian-git-sync/Pasted.md"
+    "Cybersecurity-Virtualisation/Images/test.png 1.png"
   ]
 }
