@@ -6,5 +6,8 @@ Persistent storage for configuration and cache data
 /home/michiel/jellyfin/config
 ```
 
-Docker
+Docker Compose Setup
+```
+
+```
 
