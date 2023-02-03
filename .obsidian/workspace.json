@@ -31,16 +31,40 @@
             "id": "6bf441640f02cceb",
             "type": "leaf",
             "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "59301556c9b65b96",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "5d27589c78ffdddb",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "e8323b291c20fae1",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
-                "file": "Cybersecurity-Virtualisation/Sample.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -106,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cybersecurity-Virtualisation/Sample.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cybersecurity-Virtualisation/Sample.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cybersecurity-Virtualisation/Sample.md"
+                "file": "README.md"
               }
             }
           },
@@ -184,17 +208,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "6bf441640f02cceb",
+  "active": "e8323b291c20fae1",
   "lastOpenFiles": [
+    "Cybersecurity-Virtualisation/Content.md",
+    "Cybersecurity-Virtualisation/Chapter 1.md",
+    "Cybersecurity-Virtualisation/Chapter 2.md",
+    "Cybersecurity-Virtualisation/Chapter 3.md",
     "README.md",
     "Untitled.md",
-    "Cybersecurity-Virtualisation/Sample.md",
     "Attachments/Testimage.png",
     "Attachments/testimage.jpg",
     "Cybersecurity-Virtualisation/Attachments/image.jpg",
-    "Cybersecurity-Virtualisation/Test.md",
-    "Cybersecurity-Virtualisation/Images/test.png",
-    "Cybersecurity-Virtualisation/Images/stock.jpg",
-    "Cybersecurity-Virtualisation/Images/test.png 1.png"
+    "Cybersecurity-Virtualisation/Test.md"
   ]
 }
