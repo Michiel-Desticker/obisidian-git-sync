@@ -48,5 +48,25 @@ docker images
 ```
 
 rmi - remove images
+```
+# First, delete all dependent containers
+docker rmi {image name}
+```
 
+pull - download an image
+```
+docker pull {image}
+```
 
+append a command
+```
+# Make it sleep for 5 seconds
+docker run ubuntu sleep 5
+```
+
+exec - execute a command
+```
+# Execute a docker command on your docker container
+# eg. print the contents of a file
+docker exec distracted_mcclintock cat /etc/hosts
+```
