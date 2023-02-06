@@ -17,4 +17,36 @@ With Docker, you can run each component in a seperate container with its own dep
 
 Completely isolated environments that all share the same OS kernel.
 
+## Docker commands
+
+run - start a container
+```
+docker run {name container}
+```
+
+ps - list containers
+```
+docker ps
+
+# Use docker ps -a to see all previously stopped or exited containers
+docker ps -a
+```
+
+stop - stop a container
+```
+docker stop {name or container id of the container}
+```
+
+rm - remove a container
+```
+docker rm {name container}
+```
+
+images - list images
+```
+docker images
+```
+
+rmi - remove images
+
 
