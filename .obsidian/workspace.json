@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "e6d454767d8300c8",
+        "id": "13d0455d1f90656e",
         "type": "tabs",
         "children": [
           {
-            "id": "ec814373af74783f",
+            "id": "6629ce9025daa3b8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Knowledge Base/Docker.md",
+                "file": "The-IT-Professional/1. Gastcollege (13 februari).md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Knowledge Base/Docker.md",
+                "file": "The-IT-Professional/1. Gastcollege (13 februari).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Knowledge Base/Docker.md",
+                "file": "The-IT-Professional/1. Gastcollege (13 februari).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Knowledge Base/Docker.md"
+                "file": "The-IT-Professional/1. Gastcollege (13 februari).md"
               }
             }
           },
@@ -163,8 +163,9 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "ec814373af74783f",
+  "active": "6629ce9025daa3b8",
   "lastOpenFiles": [
+    "Knowledge Base/Docker.md",
     "README.md",
     "Cybersecurity-Virtualisation/Content.md",
     "Cybersecurity-Virtualisation/Chapter 1.md",
@@ -173,7 +174,6 @@
     "Untitled.md",
     "Attachments/Testimage.png",
     "Attachments/testimage.jpg",
-    "Cybersecurity-Virtualisation/Attachments/image.jpg",
-    "Cybersecurity-Virtualisation/Test.md"
+    "Cybersecurity-Virtualisation/Attachments/image.jpg"
   ]
 }
