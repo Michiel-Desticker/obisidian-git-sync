@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "13d0455d1f90656e",
+        "id": "06662072fac221af",
         "type": "tabs",
         "children": [
           {
-            "id": "6629ce9025daa3b8",
+            "id": "3ea70bdb05bcf581",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "The-IT-Professional/1. Gastcollege (13 februari).md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "19c5c8c58fb7355d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer Networks III/Commands.md",
+                "file": "IT2Business/02_15.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer Networks III/Commands.md",
+                "file": "IT2Business/02_15.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer Networks III/Commands.md",
+                "file": "IT2Business/02_15.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Computer Networks III/Commands.md"
+                "file": "IT2Business/02_15.md"
               }
             }
           },
@@ -176,9 +163,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "19c5c8c58fb7355d",
+  "active": "9eb2df65fbc1d65e",
   "lastOpenFiles": [
     "The-IT-Professional/1. Gastcollege (13 februari).md",
+    "Computer Networks III/Commands.md",
     "Knowledge Base/Docker.md",
     "README.md",
     "Cybersecurity-Virtualisation/Content.md",
@@ -186,7 +174,6 @@
     "Cybersecurity-Virtualisation/Chapter 2.md",
     "Cybersecurity-Virtualisation/Chapter 3.md",
     "Untitled.md",
-    "Attachments/Testimage.png",
-    "Attachments/testimage.jpg"
+    "Attachments/Testimage.png"
   ]
 }
