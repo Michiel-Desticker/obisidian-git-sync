@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "0df67835609f7020",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "System-Engineering-Project/Vagrant.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -69,8 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "605959d54801d40d",
@@ -86,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cybersecurity-Virtualisation/1. Network Sniffing.md",
+                "file": "System-Engineering-Project/Vagrant.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cybersecurity-Virtualisation/1. Network Sniffing.md",
+                "file": "System-Engineering-Project/Vagrant.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cybersecurity-Virtualisation/1. Network Sniffing.md"
+                "file": "System-Engineering-Project/Vagrant.md"
               }
             }
           },
@@ -165,11 +177,11 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "53ab28525e759855",
+  "active": "0df67835609f7020",
   "lastOpenFiles": [
+    "Cybersecurity-Virtualisation/1. Network Sniffing.md",
     "IT2Business/02_15.md",
     "Attachments/Pasted image 20230217110649.png",
-    "Cybersecurity-Virtualisation/1. Network Sniffing.md",
     "The-IT-Professional/02_13.md",
     "Computer Networks III/Commands.md",
     "Knowledge Base/Docker.md",
