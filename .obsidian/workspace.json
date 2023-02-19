@@ -13,26 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cybersecurity-Virtualisation/1. Network Sniffing.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0df67835609f7020",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "System-Engineering-Project/Vagrant Almalinux.md",
+                "file": "The-IT-Professional/02_13.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "System-Engineering-Project/Vagrant Almalinux.md",
+                "file": "The-IT-Professional/02_13.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "System-Engineering-Project/Vagrant Almalinux.md",
+                "file": "The-IT-Professional/02_13.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "System-Engineering-Project/Vagrant Almalinux.md"
+                "file": "The-IT-Professional/02_13.md"
               }
             }
           },
@@ -177,8 +164,9 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "0df67835609f7020",
+  "active": "53ab28525e759855",
   "lastOpenFiles": [
+    "System-Engineering-Project/Vagrant Almalinux.md",
     "Cybersecurity-Virtualisation/1. Network Sniffing.md",
     "IT2Business/02_15.md",
     "Attachments/Pasted image 20230217110649.png",
@@ -187,7 +175,6 @@
     "Knowledge Base/Docker.md",
     "README.md",
     "Cybersecurity-Virtualisation/Content.md",
-    "Cybersecurity-Virtualisation/Chapter 1.md",
-    "Cybersecurity-Virtualisation/Chapter 2.md"
+    "Cybersecurity-Virtualisation/Chapter 1.md"
   ]
 }

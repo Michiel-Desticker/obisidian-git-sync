@@ -95,12 +95,3 @@ michi@LAPTOP-AU8VQ3TK MINGW64 ~/OneDrive - Hogeschool Gent/Semester 2/SEL/Vagran
 $ vagrant ssh
 [vagrant@localhost ~]$
 ```
-
-## Vagrant sharing
-
-Install ngrok with Chocolatey (PS)
-
-```
-choco install ngrok
-```
-
