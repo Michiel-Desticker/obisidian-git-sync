@@ -1,3 +1,5 @@
+Source: https://developer.hashicorp.com/vagrant/tutorials/getting-started/getting-started-project-setup
+
 Install Vagrant: https://developer.hashicorp.com/vagrant/docs/installation
 
 Create directory for new project
