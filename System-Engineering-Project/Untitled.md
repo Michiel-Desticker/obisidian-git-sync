@@ -1,87 +1,33 @@
-# Voortgangsrapport week nn
+# Lastenboek Opdracht X: (titel)
 
-* Groep: G08
-* Datum voortgangsgesprek:
+(Instructies vind je tussen haakjes. Verwijder die als het document volledig ingevuld is.)
 
-| Student                | Aanw. | Opmerking |
-|:---------------------- |:----- |:--------- |
-| Michiel Desticker      |       |           |
-| Robin Rombaut          |       |           |
-| Sharon Speltdoorn      |       |           |
-| Kiran Van de Populiere |       |           |
-| Thibo Haezaert         |       |           |
+## Deliverables
 
-## Wat heb je deze week gerealiseerd?
-
-### Algemeen
-
-[Afbeelding huidige toestand Kanban-bord(en) invoegen]
-
-* ...
-* ...
-
-[Afbeelding teamoverzicht tijdregistratie onderverdeeld per deelopdracht]
-
-### Michiel Desticker
+(Som hier de concrete eindresultaten op die je voor deze opdracht moet opleveren.)
 
 * ...
 
-[Afbeelding individueel rapport tijdregistratie]
+## Deeltaken
 
-### Robin Rombaut
+(Som hier de deeltaken voor deze opdracht op en duid voor elk een verantwoordelijke en tester aan. Vermeld ook afhankelijkheden tussen deeltaken als die er zijn. Elke deeltaak wordt een kaartje op het kanban-bord!)
 
-* ...
+1. ...
+    - Verantwoordelijke: studentx
+    - Tester: studenty
+2. ...
+    - Verantwoordelijke: studentx
+    - Tester: studenty
 
-[Afbeelding individueel rapport tijdregistratie]
+## Tijdbesteding
 
-### Sharon Speltdoorn
+| Student                | Geschat | Gerealiseerd |
+|:---------------------- | -------:| ------------:|
+| Michiel Desticker      |         |              |
+| Robin Rombaut          |         |              |
+| Sharon Speltdoorn      |         |              |
+| Kiran Van de Populiere |         |              |
+| Thibo Haezaert         |         |              |
+| **totaal**             |         |              |
 
-* ...
-
-[Afbeelding individueel rapport tijdregistratie]
-
-### Kiran Van de Populiere
-
-* ...
-
-[Afbeelding individueel rapport tijdregistratie]
-
-### Thibo Haezaert
-
-* ...
-
-[Afbeelding individueel rapport tijdregistratie]
-
-## Wat plan je volgende week te doen?
-
-### Algemeen
-### Michiel Desticker
-### Robin Rombaut
-### Sharon Speltdoorn
-### Kiran Van de Populiere
-### Thibo Haezaert
-
-## Waar hebben jullie nog problemen mee?
-
-* ...
-* ...
-
-## Feedback technisch luik
-
-### Algemeen
-
-### Michiel Desticker
-### Robin Rombaut
-### Sharon Speltdoorn
-### Kiran Van de Populiere
-### Thibo Haezaert
-
-## Feedback analyseluik
-
-### Algemeen
-
-### Michiel Desticker
-### Robin Rombaut
-### Sharon Speltdoorn
-### Kiran Van de Populiere
-### Thibo Haezaert
+(na oplevering van de taak een schermafbeelding toevoegen van rapport tijdbesteding voor deze taak)
