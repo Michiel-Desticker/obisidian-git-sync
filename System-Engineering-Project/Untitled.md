@@ -3,13 +3,13 @@
 * Groep: G08
 * Datum voortgangsgesprek:
 
-| Student  | Aanw. | Opmerking |
-| :---     | :---  | :---      |
-| Michiel Desticker |       |           |
-| Robin Rombaut|       |           |
-| Sharon Speltdoorn |       |           |
+| Student                | Aanw. | Opmerking |
+|:---------------------- |:----- |:--------- |
+| Michiel Desticker      |       |           |
+| Robin Rombaut          |       |           |
+| Sharon Speltdoorn      |       |           |
 | Kiran Van de Populiere |       |           |
-| Thibo Haezaert |       |           |
+| Thibo Haezaert         |       |           |
 
 ## Wat heb je deze week gerealiseerd?
 
@@ -19,7 +19,7 @@
 
 * ...
 * ...
-a
+
 [Afbeelding teamoverzicht tijdregistratie onderverdeeld per deelopdracht]
 
 ### Michiel Desticker
@@ -55,7 +55,7 @@ a
 ## Wat plan je volgende week te doen?
 
 ### Algemeen
-### ### Michiel Desticker
+### Michiel Desticker
 ### Robin Rombaut
 ### Sharon Speltdoorn
 ### Kiran Van de Populiere
