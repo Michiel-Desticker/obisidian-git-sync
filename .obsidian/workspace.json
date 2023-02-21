@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "bc20d067ae5e56e3",
+        "id": "7b6b56f2ac0789ea",
         "type": "tabs",
         "children": [
           {
-            "id": "402dc6cda17bb218",
+            "id": "ce5e3b66b19647c1",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -65,8 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "605959d54801d40d",
@@ -157,12 +156,12 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "d43cbed193659913",
+  "active": "ce5e3b66b19647c1",
   "lastOpenFiles": [
+    "System-Engineering-Project/Vagrant Almalinux.md",
     "Data-Science-AI/0. Intro, studiewijzer.md",
     "Data-Science-AI/1. Basisbegrippen, steekproefonderzoek.md",
     "Cybersecurity-Virtualisation/1. Network Sniffing.md",
-    "System-Engineering-Project/Vagrant Almalinux.md",
     "The-IT-Professional/02_13.md",
     "IT2Business/02_15.md",
     "System-Engineering-Project/Untitled.md",
