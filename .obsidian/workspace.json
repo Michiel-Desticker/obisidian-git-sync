@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "Data-Science-AI/0. Intro, studiewijzer.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "da76bccf854a796c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "Data-Science-AI/1. Basisbegrippen, steekproefonderzoek.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -165,8 +178,9 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "492c3bb846ddbfbb",
+  "active": "da76bccf854a796c",
   "lastOpenFiles": [
+    "Data-Science-AI/0. Intro, studiewijzer.md",
     "Cybersecurity-Virtualisation/1. Network Sniffing.md",
     "System-Engineering-Project/Vagrant Almalinux.md",
     "The-IT-Professional/02_13.md",
@@ -175,7 +189,6 @@
     "Attachments/Pasted image 20230217110649.png",
     "Computer Networks III/Commands.md",
     "Knowledge Base/Docker.md",
-    "README.md",
-    "Cybersecurity-Virtualisation/Content.md"
+    "README.md"
   ]
 }
