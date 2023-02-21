@@ -4,35 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "f709cec1fed92e43",
+        "id": "bc20d067ae5e56e3",
         "type": "tabs",
         "children": [
           {
-            "id": "492c3bb846ddbfbb",
+            "id": "402dc6cda17bb218",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Data-Science-AI/0. Intro, studiewijzer.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "da76bccf854a796c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Data-Science-AI/1. Basisbegrippen, steekproefonderzoek.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -99,7 +82,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Data-Science-AI/1. Basisbegrippen, steekproefonderzoek.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +98,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Data-Science-AI/1. Basisbegrippen, steekproefonderzoek.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,9 +119,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Data-Science-AI/1. Basisbegrippen, steekproefonderzoek.md"
-              }
+              "state": {}
             }
           },
           {
@@ -164,8 +143,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -178,9 +156,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "da76bccf854a796c",
+  "active": "402dc6cda17bb218",
   "lastOpenFiles": [
     "Data-Science-AI/0. Intro, studiewijzer.md",
+    "Data-Science-AI/1. Basisbegrippen, steekproefonderzoek.md",
     "Cybersecurity-Virtualisation/1. Network Sniffing.md",
     "System-Engineering-Project/Vagrant Almalinux.md",
     "The-IT-Professional/02_13.md",
@@ -188,7 +167,6 @@
     "System-Engineering-Project/Untitled.md",
     "Attachments/Pasted image 20230217110649.png",
     "Computer Networks III/Commands.md",
-    "Knowledge Base/Docker.md",
-    "README.md"
+    "Knowledge Base/Docker.md"
   ]
 }
