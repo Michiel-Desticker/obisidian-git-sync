@@ -180,11 +180,14 @@ Security Violation Count   : 0
 Switch(config-if)# **switchport port-security violation** { **protect** | **restrict** | **shutdown**}
 ```
 
+
 | Mode                   | Description                                                                                                                                                                                                                                                                                             |
 | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **shutdown** (default) | The port transitions to the error-disabled state immediately, turns off the port LED, and sends a syslog message. It increments the violation counter. When a secure port is in the error-disabled state, an administrator must re-enable it by entering the **shutdown** and **no shutdown** commands. |
 | **restrict**           | The port drops packets with unknown source addresses until you remove a sufficient number of secure MAC addresses to drop below the maximum value or increase the maximum value. This mode causes the Security Violation counter to increment and generates a syslog message.                           |
 | **protect**                       |      This is the least secure of the security violation modes. The port drops packets with unknown MAC source addresses until you remove a sufficient number of secure MAC addresses to drop below the maximum value or increase the maximum value. No syslog message is sent.                                                                                                                                                                                                                                                                                                   |
+
+restrict nuttigste
 
 | Violation mode | Discards Offending Traffic | Sends Syslog Message | Increase Violation Counter | Shuts Down Port |
 | -------------- | -------------------------- | -------------------- | -------------------------- | --------------- |
@@ -211,4 +214,69 @@ Configured MAC Addresses   : 1
 Sticky MAC Addresses       : 1
 Last Source Address:Vlan   : a41f.7272.676a:1
 Security Violation Count   : 0
+```
+
+### Verify Port Security
+
+**Port Security for All Interfaces**
+```
+S1# **show port-security**
+Secure Port  MaxSecureAddr  CurrentAddr  SecurityViolation  Security Action
+                (Count)       (Count)          (Count)
+---------------------------------------------------------------------------
+      Fa0/1              2            2                  0         Shutdown
+---------------------------------------------------------------------------
+Total Addresses in System (excluding one mac per port)     : 1
+Max Addresses limit in System (excluding one mac per port) : 8192
+```
+
+**Port Security for a Specific Interface**
+```
+S1# **show port-security interface fastethernet 0/1**
+Port Security          	    : Enabled
+Port Status            	    : Secure-up
+Violation Mode              : Shutdown
+Aging Time                  : 10 mins
+Aging Type                  : Inactivity
+SecureStatic Address Aging  : Disabled
+Maximum MAC Addresses       : 2
+Total MAC Addresses         : 2
+Configured MAC Addresses    : 1
+Sticky MAC Addresses        : 1
+Last Source Address:Vlan    : a41f.7273.018c:1
+Security Violation Count    : 0
+```
+
+**Verify Learned MAC Addresses**
+```
+S1# **show run interface fa0/1**
+Building configuration...
+
+Current configuration : 365 bytes
+!
+interface FastEthernet0/1
+ switchport mode access
+ switchport port-security maximum 2
+ switchport port-security mac-address sticky
+ switchport port-security mac-address sticky a41f.7272.676a
+ switchport port-security mac-address aaaa.bbbb.1234
+ switchport port-security aging time 10
+ switchport port-security aging type inactivity
+ switchport port-security
+end
+```
+
+**Verify Secure MAC Addresses**
+```
+S1# **show port-security address**
+               Secure Mac Address Table
+-----------------------------------------------------------------------------
+Vlan    Mac Address       Type                          Ports   Remaining Age
+                                                                   (mins)
+----    -----------       ----                          -----   -------------
+   1    a41f.7272.676a    SecureSticky                  Fa0/1        -
+   1    aaaa.bbbb.1234    SecureConfigured              Fa0/1        -
+-----------------------------------------------------------------------------
+Total Addresses in System (excluding one mac per port)     : 1
+Max Addresses limit in System (excluding one mac per port) : 8192
 ```
