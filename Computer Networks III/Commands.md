@@ -368,3 +368,16 @@ MacAddress         IpAddress       Lease(sec) Type          VLAN Interface
 ------------------ --------------- ---------- ------------- ---- --------------------
 00:03:47:B5:9F:AD  192.168.10.11   193185     dhcp-snooping 5    FastEthernet0/5
 ```
+
+### Mitigate ARP Attacks
+
+DAI Configuration Example
+```
+S1(config)# ip dhcp snooping
+S1(config)# ip dhcp snooping vlan 10
+S1(config)# ip arp inspection vlan 10
+S1(config)# interface fa0/24
+S1(config-if)# ip dhcp snooping trust
+S1(config-if)# ip arp inspection trust
+```
+
