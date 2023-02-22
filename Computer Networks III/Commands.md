@@ -313,3 +313,58 @@ S1(config-if-range)# switchport nonegotiate
 S1(config-if-range)# switchport trunk native vlan 999
 S1(config-if-range)# end
 ```
+
+### Mitigate DHCP Attacks
+
+#### Steps to Implement DHCP Snooping
+```
+Step 1. Enable DHCP snooping by using the ip dhcp snooping global configuration command.
+
+Step 2. On trusted ports, use the ip dhcp snooping trust interface configuration command.
+
+Step 3. Limit the number of DHCP discovery messages that can be received per second on untrusted ports by using the ip dhcp snooping limit rate interface configuration command.
+
+Step 4. Enable DHCP snooping by VLAN, or by a range of VLANs, by using the ip dhcp snooping _vlan_ global configuration command.
+```
+Example
+```
+S1(config)# ip dhcp snooping
+S1(config)# interface f0/1
+S1(config-if)# ip dhcp snooping trust
+S1(config-if)# exit
+S1(config)# interface range f0/5 - 24
+S1(config-if-range)# ip dhcp snooping limit rate 6
+S1(config-if-range)# exit
+S1(config)# ip dhcp snooping vlan 5,10,50-52
+S1(config)# end
+```
+
+Verification
+```
+S1# show ip dhcp snooping
+Switch DHCP snooping is enabled
+DHCP snooping is configured on following VLANs:
+5,10,50-52
+DHCP snooping is operational on following VLANs:
+none
+DHCP snooping is configured on the following L3 Interfaces:
+Insertion of option 82 is enabled
+   circuit-id default format: vlan-mod-port
+   remote-id: 0cd9.96d2.3f80 (MAC)
+Option 82 on untrusted port is not allowed
+Verification of hwaddr field is enabled
+Verification of giaddr field is enabled
+DHCP snooping trust/rate is configured on the following Interfaces:
+Interface                  Trusted    Allow option    Rate limit (pps)
+-----------------------    -------    ------------    ----------------   
+FastEthernet0/1            yes        yes             unlimited
+  Custom circuit-ids:
+FastEthernet0/5            no         no              6         
+  Custom circuit-ids:
+FastEthernet0/6            no         no              6         
+  Custom circuit-ids:
+S1# show ip dhcp snooping binding
+MacAddress         IpAddress       Lease(sec) Type          VLAN Interface
+------------------ --------------- ---------- ------------- ---- --------------------
+00:03:47:B5:9F:AD  192.168.10.11   193185     dhcp-snooping 5    FastEthernet0/5
+```
