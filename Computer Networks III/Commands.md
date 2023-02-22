@@ -146,11 +146,13 @@ Enable or disable static aging for the secure port, or to set the aging time or 
 Switch(config-if)# switchport port-security aging { static | time _time_ | type {absolute | inactivity}}
 ```
 
-| Parameter       | Description                                                                                                              |
-| --------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| static          | Enable aging for statically configured secure addresses on this port.                                                    |
-| **time** _time_ | Specify the aging time for this port. The range is 0 to 1440 minutes. If the time is 0, aging is disabled for this port. |
-| **type absolute**                |                                                                                                                          |
+| Parameter         | Description                                                                                                                                                            |
+| ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| static            | Enable aging for statically configured secure addresses on this port.                                                                                                  |
+| **time** _time_   | Specify the aging time for this port. The range is 0 to 1440 minutes. If the time is 0, aging is disabled for this port.                                               |
+| **type absolute** | Set the absolute aging time. All the secure addresses on this port age out exactly after the time (in minutes) specified and are removed from the secure address list. |
+| **type inactivity**                  |        Set the inactivity aging type. The secure addresses on this port age out only if there is no data traffic from the secure source address for the specified time period.                                                                                                                                                               |
+
 Example configuring aging type to 10 minutes of inactivity
 ```
 S1(config)# interface fa0/1
@@ -171,3 +173,19 @@ Sticky MAC Addresses       : 1
 Last Source Address:Vlan   : a41f.7272.676a:1
 Security Violation Count   : 0
 ```
+
+### Port Security Violation Modes
+
+```
+Switch(config-if)# **switchport port-security violation** { **protect** | **restrict** | **shutdown**}
+```
+
+| Mode                   | Description                                                                                                                                                                                                                                                                                             |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **shutdown** (default) | The port transitions to the error-disabled state immediately, turns off the port LED, and sends a syslog message. It increments the violation counter. When a secure port is in the error-disabled state, an administrator must re-enable it by entering the **shutdown** and **no shutdown** commands. |
+| **restrict**           | The port drops packets with unknown source addresses until you remove a sufficient number of secure MAC addresses to drop below the maximum value or increase the maximum value. This mode causes the Security Violation counter to increment and generates a syslog message.                           |
+| **protect**                       |      This is the least secure of the security violation modes. The port drops packets with unknown MAC source addresses until you remove a sufficient number of secure MAC addresses to drop below the maximum value or increase the maximum value. No syslog message is sent.                                                                                                                                                                                                                                                                                                   |
+
+| Violation mode |     |     |     |     | 
+| -------------- | --- | --- | --- | --- |
+| -------------- |     |     |     |     |
