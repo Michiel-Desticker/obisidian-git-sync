@@ -145,9 +145,9 @@ Switch(config-if)# switchport port-security aging { static | time _time_ | type 
 | Parameter         | Description                                                                                                                                                            |
 | ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | static            | Enable aging for statically configured secure addresses on this port.                                                                                                  |
-| **time** _time_   | Specify the aging time for this port. The range is 0 to 1440 minutes. If the time is 0, aging is disabled for this port.                                               |
-| **type absolute** | Set the absolute aging time. All the secure addresses on this port age out exactly after the time (in minutes) specified and are removed from the secure address list. |
-| **type inactivity**                  |        Set the inactivity aging type. The secure addresses on this port age out only if there is no data traffic from the secure source address for the specified time period.                                                                                                                                                               |
+| time _time_   | Specify the aging time for this port. The range is 0 to 1440 minutes. If the time is 0, aging is disabled for this port.                                               |
+| type absolute | Set the absolute aging time. All the secure addresses on this port age out exactly after the time (in minutes) specified and are removed from the secure address list. |
+| type inactivity                  |        Set the inactivity aging type. The secure addresses on this port age out only if there is no data traffic from the secure source address for the specified time period.                                                                                                                                                               |
 
 Example configuring aging type to 10 minutes of inactivity
 ```
@@ -173,15 +173,15 @@ Security Violation Count   : 0
 ### Port Security Violation Modes
 
 ```
-Switch(config-if)# **switchport port-security violation** { **protect** | **restrict** | **shutdown**}
+Switch(config-if)# switchport port-security violation { protect | restrict | shutdown}
 ```
 
 
 | Mode                   | Description                                                                                                                                                                                                                                                                                             |
 | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **shutdown** (default) | The port transitions to the error-disabled state immediately, turns off the port LED, and sends a syslog message. It increments the violation counter. When a secure port is in the error-disabled state, an administrator must re-enable it by entering the **shutdown** and **no shutdown** commands. |
-| **restrict**           | The port drops packets with unknown source addresses until you remove a sufficient number of secure MAC addresses to drop below the maximum value or increase the maximum value. This mode causes the Security Violation counter to increment and generates a syslog message.                           |
-| **protect**                       |      This is the least secure of the security violation modes. The port drops packets with unknown MAC source addresses until you remove a sufficient number of secure MAC addresses to drop below the maximum value or increase the maximum value. No syslog message is sent.                                                                                                                                                                                                                                                                                                   |
+| shutdown (default) | The port transitions to the error-disabled state immediately, turns off the port LED, and sends a syslog message. It increments the violation counter. When a secure port is in the error-disabled state, an administrator must re-enable it by entering the shutdown and no shutdown commands. |
+| restrict           | The port drops packets with unknown source addresses until you remove a sufficient number of secure MAC addresses to drop below the maximum value or increase the maximum value. This mode causes the Security Violation counter to increment and generates a syslog message.                           |
+| protect                       |      This is the least secure of the security violation modes. The port drops packets with unknown MAC source addresses until you remove a sufficient number of secure MAC addresses to drop below the maximum value or increase the maximum value. No syslog message is sent.                                                                                                                                                                                                                                                                                                   |
 
 restrict nuttigste
 
@@ -193,11 +193,11 @@ restrict nuttigste
 
 Example 
 ```
-S1(config)# **interface f0/1**
-S1(config-if)# **switchport port-security violation restrict**
-S1(config-if)# **end**
+S1(config)# interface f0/1
+S1(config-if)# switchport port-security violation restrict
+S1(config-if)# end
 S1#
-S1# **show port-security interface f0/1**
+S1# show port-security interface f0/1
 Port Security              : Enabled
 Port Status                : Secure-up
 Violation Mode             : Restrict
@@ -214,9 +214,9 @@ Security Violation Count   : 0
 
 ### Verify Port Security
 
-**Port Security for All Interfaces**
+Port Security for All Interfaces
 ```
-S1# **show port-security**
+S1# show port-security
 Secure Port  MaxSecureAddr  CurrentAddr  SecurityViolation  Security Action
                 (Count)       (Count)          (Count)
 ---------------------------------------------------------------------------
@@ -226,9 +226,9 @@ Total Addresses in System (excluding one mac per port)     : 1
 Max Addresses limit in System (excluding one mac per port) : 8192
 ```
 
-**Port Security for a Specific Interface**
+Port Security for a Specific Interface
 ```
-S1# **show port-security interface fastethernet 0/1**
+S1# show port-security interface fastethernet 0/1
 Port Security          	    : Enabled
 Port Status            	    : Secure-up
 Violation Mode              : Shutdown
@@ -243,9 +243,9 @@ Last Source Address:Vlan    : a41f.7273.018c:1
 Security Violation Count    : 0
 ```
 
-**Verify Learned MAC Addresses**
+Verify Learned MAC Addresses
 ```
-S1# **show run interface fa0/1**
+S1# show run interface fa0/1
 Building configuration...
 
 Current configuration : 365 bytes
@@ -262,9 +262,9 @@ interface FastEthernet0/1
 end
 ```
 
-**Verify Secure MAC Addresses**
+Verify Secure MAC Addresses
 ```
-S1# **show port-security address**
+S1# show port-security address
                Secure Mac Address Table
 -----------------------------------------------------------------------------
 Vlan    Mac Address       Type                          Ports   Remaining Age
@@ -279,31 +279,37 @@ Max Addresses limit in System (excluding one mac per port) : 8192
 
 ### Steps to Mitigate VLAN Hopping Attacks
 
-**Step 1**: Disable DTP (auto trunking) negotiations on non-trunking ports by using the **switchport mode access** interface configuration command.
+Step 1: Disable DTP (auto trunking) negotiations on non-trunking ports by using the switchport mode access interface configuration command.
 
-**Step 2**: Disable unused ports and put them in an unused VLAN.
+Step 2: Disable unused ports and put them in an unused VLAN.
 
-**Step 3**: Manually enable the trunk link on a trunking port by using the **switchport mode trunk** command.
+Step 3: Manually enable the trunk link on a trunking port by using the switchport mode trunk command.
 
-**Step 4**: Disable DTP (auto trunking) negotiations on trunking ports by using the **switchport nonegotiate** command.
+Step 4: Disable DTP (auto trunking) negotiations on trunking ports by using the switchport nonegotiate command.
 
-**Step 5**: Set the native VLAN to a VLAN other than VLAN 1 by using the **switchport trunk native vlan** _vlan_number_ command.
+Step 5: Set the native VLAN to a VLAN other than VLAN 1 by using the switchport trunk native vlan _vlan_number_ command.
 
 Example
 ```
-S1(config)# **interface range fa0/1 - 16**
-S1(config-if-range)# **switchport mode access**
-S1(config-if-range)# **exit**
+-   FastEthernet ports 0/1 through fa0/16 are active access ports
+-   FastEthernet ports 0/17 through 0/20 are not currently in use
+-   FastEthernet ports 0/21 through 0/24 are trunk ports.
+```
+
+```
+S1(config)# interface range fa0/1 - 16
+S1(config-if-range)# switchport mode access
+S1(config-if-range)# exit
 S1(config)# 
-S1(config)# **interface range fa0/17 - 20**
-S1(config-if-range)# **switchport mode access**
-S1(config-if-range)# **switchport access vlan 1000**
-S1(config-if-range)# **shutdown**
-S1(config-if-range)# **exit**
+S1(config)# interface range fa0/17 - 20
+S1(config-if-range)# switchport mode access
+S1(config-if-range)# switchport access vlan 1000
+S1(config-if-range)# shutdown
+S1(config-if-range)# exit
 S1(config)# 
-S1(config)# **interface range fa0/21 - 24**
-S1(config-if-range)# **switchport mode trunk**
-S1(config-if-range)# **switchport nonegotiate**
-S1(config-if-range)# **switchport trunk native vlan 999**
-S1(config-if-range)# **end**
+S1(config)# interface range fa0/21 - 24
+S1(config-if-range)# switchport mode trunk
+S1(config-if-range)# switchport nonegotiate
+S1(config-if-range)# switchport trunk native vlan 999
+S1(config-if-range)# end
 ```
