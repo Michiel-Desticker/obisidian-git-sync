@@ -14,7 +14,8 @@
 | ------- | ----------- |
 |         |             |
 
-Secure unused ports
+### Secure unused ports
+
 ```
 interface range fa0/8-24
 shutdown
@@ -23,7 +24,8 @@ shutdown
 no shutdown
 ```
 
-Enable Port Security
+### Enable Port Security
+
 ```
 S1(config)# interface f0/1
 S1(config-if)# switchport port-security
@@ -60,4 +62,25 @@ S1(config-if)# switchport port-security
 S1(config-if)# switchport port-security
 ```
 
-Set maximum number of MAC addresses allowed on a p
+### Limit and Learn MAC Addresses
+
+Set maximum number of MAC addresses allowed on a port
+```
+Switch(config-if)# switchport port-security maximum _value_
+```
+
+Show maximum number (depends on switch)
+```
+S1(config)# interface f0/1
+S1(config-if)# switchport port-security maximum ? 
+  <1-8192>  Maximum addresses
+S1(config-if)# switchport port-security maximum
+```
+
+1. Manually Configured
+```
+Switch(config-if)# switchport port-security mac-address _mac-address_
+```
+
+2. Dynamically Learned
+4. Dynamically Learned - Sticky
