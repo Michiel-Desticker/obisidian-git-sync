@@ -10,10 +10,6 @@
 
 ## Module 11
 
-| Command | Explanation |
-| ------- | ----------- |
-|         |             |
-
 ### Secure unused ports
 
 ```
@@ -280,3 +276,4 @@ Vlan    Mac Address       Type                          Ports   Remaining Age
 Total Addresses in System (excluding one mac per port)     : 1
 Max Addresses limit in System (excluding one mac per port) : 8192
 ```
+
