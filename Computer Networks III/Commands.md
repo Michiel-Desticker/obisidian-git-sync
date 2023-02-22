@@ -77,10 +77,64 @@ S1(config-if)# switchport port-security maximum ?
 S1(config-if)# switchport port-security maximum
 ```
 
+#### Learn MAC addresses in 3 different ways
+
 1. Manually Configured
 ```
 Switch(config-if)# switchport port-security mac-address _mac-address_
 ```
 
 2. Dynamically Learned
-4. Dynamically Learned - Sticky
+```
+switchport port-security
+```
+3. Dynamically Learned - Sticky
+```
+Switch(config-if)# switchport port-security mac-address sticky
+```
+
+Veryify configuration
+```
+show port-security interface
+show port-security address
+```
+
+Example 
+```
+*Mar  1 00:12:38.179: %LINK-3-UPDOWN: Interface FastEthernet0/1, changed state to up
+*Mar  1 00:12:39.194: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to up
+S1#**conf t**
+Enter configuration commands, one per line.  End with CNTL/Z.
+S1(config)#
+S1(config)# **interface fa0/1**
+S1(config-if)# **switchport mode access**
+S1(config-if)# **switchport port-security**
+S1(config-if)# **switchport port-security maximum 2**
+S1(config-if)# **switchport port-security mac-address aaaa.bbbb.1234**
+S1(config-if)# **switchport port-security mac-address sticky** 
+S1(config-if)# **end**
+S1# **show port-security interface fa0/1**
+Port Security              : Enabled
+Port Status                : Secure-up
+Violation Mode             : Shutdown
+Aging Time                 : 0 mins
+Aging Type                 : Absolute
+SecureStatic Address Aging : Disabled
+Maximum MAC Addresses      : 2
+Total MAC Addresses        : 2
+Configured MAC Addresses   : 1
+Sticky MAC Addresses       : 1
+Last Source Address:Vlan   : a41f.7272.676a:1
+Security Violation Count   : 0
+S1# **show port-security address**
+               Secure Mac Address Table
+-----------------------------------------------------------------------------
+Vlan    Mac Address       Type                          Ports   Remaining Age
+                                                                   (mins)    
+----    -----------       ----                          -----   -------------
+1    a41f.7272.676a    SecureSticky                  Fa0/1        -
+1    aaaa.bbbb.1234    SecureConfigured              Fa0/1        -
+-----------------------------------------------------------------------------
+Total Addresses in System (excluding one mac per port)     : 1
+Max  Addresses limit in System (excluding one mac per port) : 8192
+```
