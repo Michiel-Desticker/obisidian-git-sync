@@ -186,6 +186,29 @@ Switch(config-if)# **switchport port-security violation** { **protect** | **rest
 | **restrict**           | The port drops packets with unknown source addresses until you remove a sufficient number of secure MAC addresses to drop below the maximum value or increase the maximum value. This mode causes the Security Violation counter to increment and generates a syslog message.                           |
 | **protect**                       |      This is the least secure of the security violation modes. The port drops packets with unknown MAC source addresses until you remove a sufficient number of secure MAC addresses to drop below the maximum value or increase the maximum value. No syslog message is sent.                                                                                                                                                                                                                                                                                                   |
 
-| Violation mode |     |     |     |     | 
-| -------------- | --- | --- | --- | --- |
-| -------------- |     |     |     |     |
+| Violation mode | Discards Offending Traffic | Sends Syslog Message | Increase Violation Counter | Shuts Down Port |
+| -------------- | -------------------------- | -------------------- | -------------------------- | --------------- |
+| Protect        | Yes                        | No                   | No                         | No              |
+| Restrict       | Yes                        | Yes                  | Yes                        | No              |
+| Shutdown       | Yes                        | Yes                  | Yes                        | Yes                |
+
+Example 
+```
+S1(config)# **interface f0/1**
+S1(config-if)# **switchport port-security violation restrict**
+S1(config-if)# **end**
+S1#
+S1# **show port-security interface f0/1**
+Port Security              : Enabled
+Port Status                : Secure-up
+Violation Mode             : Restrict
+Aging Time                 : 10 mins
+Aging Type                 : Inactivity
+SecureStatic Address Aging : Disabled
+Maximum MAC Addresses      : 2
+Total MAC Addresses        : 2
+Configured MAC Addresses   : 1
+Sticky MAC Addresses       : 1
+Last Source Address:Vlan   : a41f.7272.676a:1
+Security Violation Count   : 0
+```
