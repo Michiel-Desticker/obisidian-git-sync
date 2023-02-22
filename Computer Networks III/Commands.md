@@ -122,8 +122,8 @@ Aging Type                 : Absolute
 SecureStatic Address Aging : Disabled
 Maximum MAC Addresses      : 2
 Total MAC Addresses        : 2
-Configured MAC Addresses   : 1
-Sticky MAC Addresses       : 1
+Configured MAC Addresses   : 1 #static MAC address
+Sticky MAC Addresses       : 1 #sticky MAC address
 Last Source Address:Vlan   : a41f.7272.676a:1
 Security Violation Count   : 0
 S1# **show port-security address**
@@ -137,4 +137,11 @@ Vlan    Mac Address       Type                          Ports   Remaining Age
 -----------------------------------------------------------------------------
 Total Addresses in System (excluding one mac per port)     : 1
 Max  Addresses limit in System (excluding one mac per port) : 8192
+```
+
+### Port Security Aging
+
+Enable or disable static aging for the secure port, or to set the aging time or type
+```
+Switch(config-if)# **switchport port-security aging** { **static** | **time** _time_ | **type** {**absolute** | **inactivity**}}
 ```
