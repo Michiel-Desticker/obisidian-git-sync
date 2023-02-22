@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer Networks III/Commands.md",
+                "file": "The-IT-Professional/02_13.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 362.5
   },
   "right": {
     "id": "605959d54801d40d",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer Networks III/Commands.md",
+                "file": "The-IT-Professional/02_13.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer Networks III/Commands.md",
+                "file": "The-IT-Professional/02_13.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Computer Networks III/Commands.md"
+                "file": "The-IT-Professional/02_13.md"
               }
             }
           },
@@ -167,6 +166,7 @@
   },
   "active": "ce5e3b66b19647c1",
   "lastOpenFiles": [
+    "Computer Networks III/Commands.md",
     "System-Engineering-Project/Vagrant Almalinux.md",
     "Data-Science-AI/0. Intro, studiewijzer.md",
     "Data-Science-AI/1. Basisbegrippen, steekproefonderzoek.md",
@@ -175,7 +175,6 @@
     "IT2Business/02_15.md",
     "System-Engineering-Project/Untitled.md",
     "Attachments/Pasted image 20230217110649.png",
-    "Computer Networks III/Commands.md",
     "Knowledge Base/Docker.md"
   ]
 }
