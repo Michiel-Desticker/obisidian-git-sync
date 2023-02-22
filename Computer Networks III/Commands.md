@@ -317,7 +317,7 @@ S1(config-if-range)# end
 ### Mitigate DHCP Attacks
 
 #### Steps to Implement DHCP Snooping
-```
+
 Step 1. Enable DHCP snooping by using the ip dhcp snooping global configuration command.
 
 Step 2. On trusted ports, use the ip dhcp snooping trust interface configuration command.
@@ -325,7 +325,7 @@ Step 2. On trusted ports, use the ip dhcp snooping trust interface configurati
 Step 3. Limit the number of DHCP discovery messages that can be received per second on untrusted ports by using the ip dhcp snooping limit rate interface configuration command.
 
 Step 4. Enable DHCP snooping by VLAN, or by a range of VLANs, by using the ip dhcp snooping _vlan_ global configuration command.
-```
+
 Example
 ```
 S1(config)# ip dhcp snooping
@@ -381,3 +381,19 @@ S1(config-if)# ip dhcp snooping trust
 S1(config-if)# ip arp inspection trust
 ```
 
+Configure DAI to drop ARP packets when the IP addresses are invalid
+```
+S1(config)# ip arp inspection validate ?
+dst-mac  Validate destination MAC address
+  ip       Validate IP addresses
+  src-mac  Validate source MAC address
+S1(config)# ip arp inspection validate src-mac
+S1(config)# ip arp inspection validate dst-mac
+S1(config)# ip arp inspection validate ip
+S1(config)# do show run | include validate
+ip arp inspection validate ip 
+S1(config)# ip arp inspection validate src-mac dst-mac ip
+S1(config)# do show run | include validate
+ip arp inspection validate src-mac dst-mac ip 
+S1(config)#
+```
