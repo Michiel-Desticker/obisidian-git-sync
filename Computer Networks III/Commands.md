@@ -277,3 +277,33 @@ Total Addresses in System (excluding one mac per port)     : 1
 Max Addresses limit in System (excluding one mac per port) : 8192
 ```
 
+### Steps to Mitigate VLAN Hopping Attacks
+
+**Step 1**: Disable DTP (auto trunking) negotiations on non-trunking ports by using the **switchport mode access** interface configuration command.
+
+**Step 2**: Disable unused ports and put them in an unused VLAN.
+
+**Step 3**: Manually enable the trunk link on a trunking port by using the **switchport mode trunk** command.
+
+**Step 4**: Disable DTP (auto trunking) negotiations on trunking ports by using the **switchport nonegotiate** command.
+
+**Step 5**: Set the native VLAN to a VLAN other than VLAN 1 by using the **switchport trunk native vlan** _vlan_number_ command.
+
+Example
+```
+S1(config)# **interface range fa0/1 - 16**
+S1(config-if-range)# **switchport mode access**
+S1(config-if-range)# **exit**
+S1(config)# 
+S1(config)# **interface range fa0/17 - 20**
+S1(config-if-range)# **switchport mode access**
+S1(config-if-range)# **switchport access vlan 1000**
+S1(config-if-range)# **shutdown**
+S1(config-if-range)# **exit**
+S1(config)# 
+S1(config)# **interface range fa0/21 - 24**
+S1(config-if-range)# **switchport mode trunk**
+S1(config-if-range)# **switchport nonegotiate**
+S1(config-if-range)# **switchport trunk native vlan 999**
+S1(config-if-range)# **end**
+```
