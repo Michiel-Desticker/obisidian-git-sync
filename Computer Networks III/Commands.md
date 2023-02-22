@@ -103,17 +103,17 @@ Example
 ```
 *Mar  1 00:12:38.179: %LINK-3-UPDOWN: Interface FastEthernet0/1, changed state to up
 *Mar  1 00:12:39.194: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to up
-S1#**conf t**
+S1#conf t
 Enter configuration commands, one per line.  End with CNTL/Z.
 S1(config)#
-S1(config)# **interface fa0/1**
-S1(config-if)# **switchport mode access**
-S1(config-if)# **switchport port-security**
-S1(config-if)# **switchport port-security maximum 2**
-S1(config-if)# **switchport port-security mac-address aaaa.bbbb.1234**
-S1(config-if)# **switchport port-security mac-address sticky** 
-S1(config-if)# **end**
-S1# **show port-security interface fa0/1**
+S1(config)# interface fa0/1
+S1(config-if)# switchport mode access
+S1(config-if)# switchport port-security
+S1(config-if)# switchport port-security maximum 2
+S1(config-if)# switchport port-security mac-address aaaa.bbbb.1234
+S1(config-if)# switchport port-security mac-address sticky 
+S1(config-if)# end
+S1# show port-security interface fa0/1
 Port Security              : Enabled
 Port Status                : Secure-up
 Violation Mode             : Shutdown
@@ -126,7 +126,7 @@ Configured MAC Addresses   : 1 #static MAC address
 Sticky MAC Addresses       : 1 #sticky MAC address
 Last Source Address:Vlan   : a41f.7272.676a:1
 Security Violation Count   : 0
-S1# **show port-security address**
+S1# show port-security address
                Secure Mac Address Table
 -----------------------------------------------------------------------------
 Vlan    Mac Address       Type                          Ports   Remaining Age
@@ -143,5 +143,31 @@ Max  Addresses limit in System (excluding one mac per port) : 8192
 
 Enable or disable static aging for the secure port, or to set the aging time or type
 ```
-Switch(config-if)# **switchport port-security aging** { **static** | **time** _time_ | **type** {**absolute** | **inactivity**}}
+Switch(config-if)# switchport port-security aging { static | time _time_ | type {absolute | inactivity}}
+```
+
+| Parameter       | Description                                                                                                              |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| static          | Enable aging for statically configured secure addresses on this port.                                                    |
+| **time** _time_ | Specify the aging time for this port. The range is 0 to 1440 minutes. If the time is 0, aging is disabled for this port. |
+| **type absolute**                |                                                                                                                          |
+Example configuring aging type to 10 minutes of inactivity
+```
+S1(config)# interface fa0/1
+S1(config-if)# switchport port-security aging time 10 
+S1(config-if)# switchport port-security aging type inactivity 
+S1(config-if)# end
+S1# show port-security interface fa0/1
+Port Security              : Enabled
+Port Status                : Secure-up
+Violation Mode             : Shutdown
+Aging Time                 : 10 mins
+Aging Type                 : Inactivity
+SecureStatic Address Aging : Disabled
+Maximum MAC Addresses      : 2
+Total MAC Addresses        : 2
+Configured MAC Addresses   : 1
+Sticky MAC Addresses       : 1
+Last Source Address:Vlan   : a41f.7272.676a:1
+Security Violation Count   : 0
 ```
