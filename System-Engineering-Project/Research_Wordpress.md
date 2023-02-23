@@ -13,4 +13,12 @@ mysql -u root -p CREATE DATABASE db_name; CREATE USER 'db_user'@'localhost' IDEN
 
 ### Wordpress
 
+#### Step 1: Download and Extract
+```
+# Download package
+curl -O https://wordpress.org/latest.tar.gz
+# Extract package
+tar -xzvf latest.tar.gz
+```
+
 
