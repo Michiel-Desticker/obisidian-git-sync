@@ -119,4 +119,5 @@ Copy only the content of `wordpress` directory into `/var/www/html`. Don't copy 
 Copy entire directory `wordpress` into `/var/www` and maybe rename it if necessary eg. `/var/www/html/blog`
 
 
+
 password
