@@ -53,3 +53,14 @@ $
 #### Step 3: Set up wp-config.php
 
 Can be done manually or automatically with an install script from Wordpress
+
+Rename sample config file
+```
+mv wp-config-sample.php wp-config.php
+```
+
+Go to this section
+```
+// ** MySQL settings - You can get this info from your web host ** //
+```
+
