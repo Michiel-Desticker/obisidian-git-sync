@@ -13,26 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "The-IT-Professional/02_13.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "05b0a632d3fd0e58",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "System-Engineering-Project/Research_Wordpress.md",
+                "file": "System-Engineering-Project/Vagrant Almalinux.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "System-Engineering-Project/Research_Wordpress.md",
+                "file": "System-Engineering-Project/Vagrant Almalinux.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "System-Engineering-Project/Research_Wordpress.md",
+                "file": "System-Engineering-Project/Vagrant Almalinux.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "System-Engineering-Project/Research_Wordpress.md"
+                "file": "System-Engineering-Project/Vagrant Almalinux.md"
               }
             }
           },
@@ -177,10 +164,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "05b0a632d3fd0e58",
+  "active": "ce5e3b66b19647c1",
   "lastOpenFiles": [
-    "The-IT-Professional/02_13.md",
     "System-Engineering-Project/Research_Wordpress.md",
+    "The-IT-Professional/02_13.md",
     "Computer Networks III/Commands.md",
     "System-Engineering-Project/Vagrant Almalinux.md",
     "Data-Science-AI/0. Intro, studiewijzer.md",
