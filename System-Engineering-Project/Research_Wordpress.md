@@ -101,12 +101,14 @@ Save the wp-config.php file
 
 Move files to root directory or subdirectory
 
-On apache, the default is `/var/www/`
+On apache, the default is `/var/www/html`
 
 ##### Root directory
 
-Copy all the content of `wordpress` directory into `/var/www`
+Copy only the content of `wordpress` directory into `/var/www/html`. Don't copy  the directory itself
 
 ###### Subdirectory
 
-Copy entire directory 
+Copy entire directory `wordpress` into `/var/www` and maybe rename it if necessary eg. `/var/www/html/blog`
+
+
