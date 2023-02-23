@@ -50,6 +50,14 @@ Bye
 $
 ```
 
+Example
+```
+CREATE DATABASE wordpress;
+CREATE USER 'wordpressuser'@'localhost' IDENTIFIED BY 'password';
+GRANT ALL ON wordpress.* TO 'wordpressuser'@'localhost';
+FLUSH PRIVILEGES;
+EXIT;
+```
 #### Step 3: Set up wp-config.php
 
 Can be done manually or automatically with an install script from Wordpress
@@ -118,6 +126,75 @@ Copy only the content of `wordpress` directory into `/var/www/html`. Don't copy 
 
 Copy entire directory `wordpress` into `/var/www` and maybe rename it if necessary eg. `/var/www/html/blog`
 
+#### Run the Install Script
 
+Surf to the site and finish installation process
 
-password
+**SELINUX**
+
+```
+sudo restorecon -R /var/www/
+```
+
+Finished!
+
+ChatGPT script installation MariaDB and Wordpress
+```
+#!/bin/bash
+
+# Install LAMP stack
+sudo dnf install httpd mariadb-server php php-mysqlnd -y
+
+# Start and enable services
+sudo systemctl start httpd
+sudo systemctl enable httpd
+sudo systemctl start mariadb
+sudo systemctl enable mariadb
+
+# Secure MariaDB installation
+sudo mysql_secure_installation <<EOF
+
+y
+$1
+$1
+y
+y
+y
+y
+EOF
+
+# Create database and user for WordPress
+sudo mysql -u root -p"$1" <<EOF
+CREATE DATABASE wordpress;
+CREATE USER 'wordpressuser'@'localhost' IDENTIFIED BY '$2';
+GRANT ALL ON wordpress.* TO 'wordpressuser'@'localhost';
+FLUSH PRIVILEGES;
+EXIT;
+EOF
+
+# Download and extract WordPress
+cd /tmp
+curl -O https://wordpress.org/latest.tar.gz
+tar xzvf latest.tar.gz
+
+# Move files to document root
+sudo mkdir -p /var/www/html
+sudo cp -a /tmp/wordpress/. /var/www/html/
+
+# Set permissions
+sudo chown -R apache:apache /var/www/html
+sudo chmod -R 755 /var/www/html
+
+# Create wp-config.php
+cd /var/www/html
+sudo cp wp-config-sample.php wp-config.php
+sudo sed -i "s/database_name_here/wordpress/g" wp-config.php
+sudo sed -i "s/username_here/wordpressuser/g" wp-config.php
+sudo sed -i "s/password_here/$2/g" wp-config.php
+
+# Restart Apache
+sudo systemctl restart httpd
+
+echo "WordPress has been installed successfully. Please navigate to http://your_server_ip/wordpress to complete the installation."
+
+```
