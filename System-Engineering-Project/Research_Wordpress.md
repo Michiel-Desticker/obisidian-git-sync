@@ -64,3 +64,49 @@ Go to this section
 // ** MySQL settings - You can get this info from your web host ** //
 ```
 
+Change these values
+```
+DB_NAME 
+
+The name of the database you created for WordPress in Step 2.
+
+DB_USER 
+
+The username you created for WordPress in Step 2.
+
+DB_PASSWORD 
+
+The password you chose for the WordPress username in Step 2.
+
+DB_HOST 
+
+The hostname you determined in Step 2 (usually localhost, but not always; see [some possible DB_HOST values](https://wordpress.org/support/article/editing-wp-config-php/#set-database-host "Editing wp-config.php")). If a port, socket, or pipe is necessary, append a colon (:) and then the relevant information to the hostname.
+
+DB_CHARSET 
+
+The database character set, normally should not be changed (see [Editing wp-config.php](https://wordpress.org/support/article/editing-wp-config-php/ "Editing wp-config.php")).
+
+DB_COLLATE 
+
+The database collation should normally be left blank (see [Editing wp-config.php](https://wordpress.org/support/article/editing-wp-config-php/ "Editing wp-config.php")).
+
+[Enter your secret key values](https://wordpress.org/support/article/editing-wp-config-php/ "Editing wp-config.php") under the section labeled
+
+  * Authentication Unique Keys and Salts.
+
+Save the wp-config.php file
+```
+
+#### Step 4: Upload the files
+
+Move files to root directory or subdirectory
+
+On apache, the default is `/var/www/`
+
+##### Root directory
+
+Copy all the content of `wordpress` directory into `/var/www`
+
+###### Subdirectory
+
+Copy entire directory 
