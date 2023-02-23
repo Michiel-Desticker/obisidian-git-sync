@@ -97,6 +97,13 @@ The database collation should normally be left blank (see [Editing wp-config.ph
 Save the wp-config.php file
 ```
 
+eg.
+```
+define('DB_NAME', 'wordpress');
+define('DB_USER', 'wordpressuser');
+define('DB_PASSWORD', 'password');
+define('DB_HOST', 'localhost');
+```
 #### Step 4: Upload the files
 
 Move files to root directory or subdirectory
