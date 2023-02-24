@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "1cfc6cfd7f3e9715",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cybersecurity-Virtualisation/2. Virtual Networks.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "System-Engineering-Project/Vagrant Almalinux.md",
+                "file": "Cybersecurity-Virtualisation/2. Virtual Networks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "System-Engineering-Project/Vagrant Almalinux.md",
+                "file": "Cybersecurity-Virtualisation/2. Virtual Networks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "System-Engineering-Project/Vagrant Almalinux.md"
+                "file": "Cybersecurity-Virtualisation/2. Virtual Networks.md"
               }
             }
           },
@@ -164,12 +177,13 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "ce5e3b66b19647c1",
+  "active": "1cfc6cfd7f3e9715",
   "lastOpenFiles": [
+    "System-Engineering-Project/Vagrant Almalinux.md",
+    "Cybersecurity-Virtualisation/2. Virtual Networks.md",
     "System-Engineering-Project/Research_Wordpress.md",
     "The-IT-Professional/02_13.md",
     "Computer Networks III/Commands.md",
-    "System-Engineering-Project/Vagrant Almalinux.md",
     "Data-Science-AI/0. Intro, studiewijzer.md",
     "Data-Science-AI/1. Basisbegrippen, steekproefonderzoek.md",
     "Cybersecurity-Virtualisation/1. Network Sniffing.md",
