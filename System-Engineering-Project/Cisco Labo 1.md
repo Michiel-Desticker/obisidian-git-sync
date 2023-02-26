@@ -369,7 +369,14 @@ R1(config-line)#transport input telnet
 ### Stap 4: configureer IPv6 instellingen op R1
 
 a. Configureer de IPv6 unicast adressen op de volgende interfaces: G0/0, G0/1, S0/0/0 en S0/0/1. 
+```
+R1(config)#interface g0/0/0
+R1(config-if)#ipv6 address 2001:DB8:ACAD:B::1/64
+```
 b. Configureer de IPv6 link-local adressen op de volgende interfaces: G0/0, G0/1, S0/0/0 en S0/0/1. Gebruik FE80::1 voor de link-local adressen op alle vier interfaces. 
+```
+R1(config-if)#ipv6 address FE80::1 link-local
+```
 c. Zet de clock rate op S0/0/0 op 128000. 
 d. Zorg ervoor dat de interfaces IPv6-pakketten kunnen versturen. 
 e. Maak IPv6 unicast routing mogelijk:
