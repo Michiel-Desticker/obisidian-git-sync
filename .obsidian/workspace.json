@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 362.5
+    "width": 362.5,
+    "collapsed": true
   },
   "right": {
     "id": "605959d54801d40d",
@@ -165,6 +166,8 @@
   },
   "active": "fd42a4767f732189",
   "lastOpenFiles": [
+    "Attachments/Pasted image 20230226152212.png",
+    "Attachments/Pasted image 20230226152100.png",
     "Attachments/Pasted image 20230226151148.png",
     "System-Engineering-Project/Cisco Labo 1.md",
     "System-Engineering-Project/Vagrant Almalinux.md",
