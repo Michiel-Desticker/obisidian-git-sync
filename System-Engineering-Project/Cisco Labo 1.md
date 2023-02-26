@@ -372,12 +372,17 @@ a. Configureer de IPv6 unicast adressen op de volgende interfaces: G0/0, G0/1, S
 ```
 R1(config)#interface g0/0/0
 R1(config-if)#ipv6 address 2001:DB8:ACAD:B::1/64
+R1(config-if)#no shutdown
 ```
 b. Configureer de IPv6 link-local adressen op de volgende interfaces: G0/0, G0/1, S0/0/0 en S0/0/1. Gebruik FE80::1 voor de link-local adressen op alle vier interfaces. 
 ```
 R1(config-if)#ipv6 address FE80::1 link-local
 ```
 c. Zet de clock rate op S0/0/0 op 128000. 
+```
+R1(config-if)#interface s0/1/0
+R1(config-if)#clock rate 128000
+```
 d. Zorg ervoor dat de interfaces IPv6-pakketten kunnen versturen. 
 e. Maak IPv6 unicast routing mogelijk:
 ```
