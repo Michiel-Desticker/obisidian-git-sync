@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "7b6b56f2ac0789ea",
+        "id": "ad2c7f1e0b85a3f4",
         "type": "tabs",
         "children": [
           {
-            "id": "ce5e3b66b19647c1",
+            "id": "fd42a4767f732189",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "System-Engineering-Project/Vagrant Almalinux.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1cfc6cfd7f3e9715",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cybersecurity-Virtualisation/2. Virtual Networks.md",
+                "file": "System-Engineering-Project/Cisco Labo 1.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cybersecurity-Virtualisation/2. Virtual Networks.md",
+                "file": "System-Engineering-Project/Cisco Labo 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cybersecurity-Virtualisation/2. Virtual Networks.md",
+                "file": "System-Engineering-Project/Cisco Labo 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cybersecurity-Virtualisation/2. Virtual Networks.md"
+                "file": "System-Engineering-Project/Cisco Labo 1.md"
               }
             }
           },
@@ -176,11 +163,13 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "1cfc6cfd7f3e9715",
+  "active": "fd42a4767f732189",
   "lastOpenFiles": [
-    "Attachments/Pasted image 20230224100558.png",
+    "Attachments/Pasted image 20230226151148.png",
+    "System-Engineering-Project/Cisco Labo 1.md",
     "System-Engineering-Project/Vagrant Almalinux.md",
     "Cybersecurity-Virtualisation/2. Virtual Networks.md",
+    "Attachments/Pasted image 20230224100558.png",
     "System-Engineering-Project/Research_Wordpress.md",
     "The-IT-Professional/02_13.md",
     "Computer Networks III/Commands.md",
