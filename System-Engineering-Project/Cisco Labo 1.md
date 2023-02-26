@@ -299,3 +299,54 @@ transport input telnet
 end
 ```
 
+Stap 3: configureer de basisinstellingen op alle routers
+
+a. Maak DNS lookup ongedaan. 
+b. Configureer een hostname. 
+c. Wijs volgende domeinnaam toe: ccna-lab.com. 
+d. Encrypteer de plain-text paswoorden.
+e. Maak een MOTD-banner die de gebruikers waarschuwt: “Toegang voor onbevoegden is verboden”. 
+f. Maak een lokale user database met een gebruikersnaam admin en paswoord classadm. 
+g. Configureer class als het privileged EXEC geëncrypteerd paswoord. 
+h. Configureer cisco als het console paswoord en maak login mogelijk.
+i. Maak login op de VTY-lijnen mogelijk door gebruik te maken van de lokale database. j. Genereer een crypto rsa key voor ssh, gebruik makend van een modulus grootte van 1024 bits. k. Verander de transport input op alle VTY-lijnen naar alleen SSH en Telnet
+
+Stap 4: configureer IPv6 instellingen op R1
+
+a. Configureer de IPv6 unicast adressen op de volgende interfaces: G0/0, G0/1, S0/0/0 en S0/0/1. 
+b. Configureer de IPv6 link-local adressen op de volgende interfaces: G0/0, G0/1, S0/0/0 en S0/0/1. Gebruik FE80::1 voor de link-local adressen op alle vier interfaces. 
+c. Zet de clock rate op S0/0/0 op 128000. 
+d. Zorg ervoor dat de interfaces IPv6-pakketten kunnen versturen. 
+e. Maak IPv6 unicast routing mogelijk:
+```
+R(config)# ipv6 unicast-router
+```
+f. Configureer OSPFv3 op R1 en zorg dat de LAN-interfaces passieve interfaces zijn.
+- Configuratie OSPFv3:
+	```
+	R(config)# ipv6 router ospf 10 R(config-rtr)# passive interface G0/0/0 (indien G0/0/0 de passieve interface is)
+	```
+- Dan op elke actieve interface:
+	```
+	R(config-if)#ipv6 ospf 10 area 0
+	```
+
+Voeg hier tussen de runningconfiguration file van R1.
+
+Stap 5: configureer IPv6 instellingen op R2
+
+a. Configureer de IPv6 unicast adressen op de volgende interfaces: Lo1, S0/0/0 en S0/0/1. 
+b. Configureer de IPv6 link-local adressen op de volgende interfaces: S0/0/0 en S0/0/1. Gebruik FE80::2 voor de link-local adressen op alle twee interfaces. 
+c. Zet de clock rate op S0/0/1 op 128000. 
+d. Zorg ervoor dat de interfaces IPv6-pakketten kunnen versturen. 
+e. Maak IPv6 unicast routing mogelijk.
+f. Maak een default route die gebruik maakt van de loopback interface Lo1 (deze dient ter simulatie van een internetconnectie).
+```
+R(config)# ipv6 route ::/0 Lo1
+```
+g. Configureer OSPFv3 op R2 en zorg dat de default route doorgegeven wordt op de andere routers van het domein.
+- Configuratie zie R1 en voeg een lijn toe, onder:
+```
+R(config)# ipv6 router ospf 10 
+R(config-rtr)# passive interface G0/0/0 (indien G0/0/0 de passieve interface is) R(config-rtr)#default-information originate
+```
