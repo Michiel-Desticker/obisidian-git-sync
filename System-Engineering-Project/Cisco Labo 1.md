@@ -424,3 +424,258 @@ R(config-rtr)#default-information originate
 ```
 
 Voeg hier tussen de runningconfiguration file van R2.
+```
+R1#show run
+
+Building configuration...
+
+  
+
+Current configuration : 1504 bytes
+
+!
+
+version 15.4
+
+no service timestamps log datetime msec
+
+no service timestamps debug datetime msec
+
+service password-encryption
+
+!
+
+hostname R1
+
+!
+
+!
+
+!
+
+enable secret 5 $1$mERr$9cTjUIEqNGurQiFU.ZeCi1
+
+!
+
+!
+
+!
+
+!
+
+!
+
+!
+
+no ip cef
+
+ipv6 unicast-routing
+
+!
+
+no ipv6 cef
+
+!
+
+!
+
+!
+
+username admin password 7 0822404F1A0A04131F
+
+!
+
+!
+
+!
+
+!
+
+!
+
+!
+
+!
+
+!
+
+no ip domain-lookup
+
+ip domain-name ccna-lab.com
+
+!
+
+!
+
+spanning-tree mode pvst
+
+!
+
+!
+
+!
+
+!
+
+!
+
+!
+
+interface GigabitEthernet0/0/0
+
+no ip address
+
+duplex auto
+
+speed auto
+
+ipv6 address FE80::1 link-local
+
+ipv6 address 2001:DB8:ACAD:B::1/64
+
+!
+
+interface GigabitEthernet0/0/1
+
+no ip address
+
+duplex auto
+
+speed auto
+
+ipv6 address FE80::1 link-local
+
+ipv6 address 2001:DB8:ACAD:A::1/64
+
+!
+
+interface GigabitEthernet0/0/2
+
+no ip address
+
+duplex auto
+
+speed auto
+
+shutdown
+
+!
+
+interface Serial0/1/0
+
+no ip address
+
+ipv6 address FE80::1 link-local
+
+ipv6 address 2001:DB8:AAAA:1::1/64
+
+ipv6 enable
+
+ipv6 ospf 10 area 0
+
+clock rate 128000
+
+!
+
+interface Serial0/1/1
+
+no ip address
+
+ipv6 address FE80::1 link-local
+
+ipv6 address 2001:DB8:AAAA:3::1/64
+
+ipv6 ospf 10 area 0
+
+!
+
+interface Vlan1
+
+no ip address
+
+shutdown
+
+!
+
+ipv6 router ospf 10
+
+log-adjacency-changes
+
+passive-interface GigabitEthernet0/0/0
+
+passive-interface GigabitEthernet0/0/1
+
+!
+
+ip classless
+
+!
+
+ip flow-export version 9
+
+!
+
+!
+
+!
+
+banner motd ^CToegang voor onbevoegden is verboden^C
+
+!
+
+!
+
+!
+
+!
+
+line con 0
+
+password 7 0822455D0A16
+
+login
+
+!
+
+line aux 0
+
+!
+
+line vty 0 4
+
+login local
+
+transport input telnet
+
+line vty 5 15
+
+login local
+
+transport input telnet
+
+!
+
+!
+
+!
+
+end
+```
+
+### Stap 5: configureer IPv6 instellingen op R2
+
+a. Configureer de IPv6 unicast adressen op de volgende interfaces: Lo1, S0/0/0 en S0/0/1. 
+b. Configureer de IPv6 link-local adressen op de volgende interfaces: S0/0/0 en S0/0/1. Gebruik FE80::2 voor de link-local adressen op alle twee interfaces. 
+c. Zet de clock rate op S0/0/1 op 128000. 
+d. Zorg ervoor dat de interfaces IPv6-pakketten kunnen versturen. 
+e. Maak IPv6 unicast routing mogelijk.
+f. Maak een default route die gebruik maakt van de loopback interface Lo1 (deze dient ter simulatie van een internetconnectie).
+```
+R(config)# ipv6 route ::/0 Lo1
+```
+g. Configureer OSPFv3 op R2 en zorg dat de default route doorgegeven wordt op de andere routers van het domein.
+- Configuratie zie R1 en voeg een lijn toe, onder:
+```
+R(config)# ipv6 router ospf 10 
+R(config-rtr)# passive interface G0/0/0 (indien G0/0/0 de passieve interface is) R(config-rtr)#default-information originate
+```
