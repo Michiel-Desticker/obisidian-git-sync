@@ -4,11 +4,12 @@
 
 ## DEEL 2: configureer alle toestellen en controleer de verbindingen
 
-Stap 1: configureer de IPv6 adressen op alle PC’s
+### Stap 1: configureer de IPv6 adressen op alle PC’s
 
 ![](../Attachments/Pasted%20image%2020230226152212.png)
 
 ### Stap 2: configureer de switchen
+
 a. Maak DNS lookup ongedaan.
 ```
 Switch(config)#no ip domain lookup
@@ -364,6 +365,7 @@ R1(config)#line vty 0 15
 R1(config-line)#transport input ssh
 R1(config-line)#transport input telnet
 ```
+
 ### Stap 4: configureer IPv6 instellingen op R1
 
 a. Configureer de IPv6 unicast adressen op de volgende interfaces: G0/0, G0/1, S0/0/0 en S0/0/1. 
