@@ -955,11 +955,26 @@ R3(config-if)#ipv6 address FE80::3 link-local
 ```
 c. Zet de clock rate op S0/0/0 op 128000. 
 ```
-
+R3(config-if)#clock rate 128000
 ```
 d. Zorg ervoor dat de interfaces IPv6-pakketten kunnen versturen. 
 ```
 R3(config-if)#no shutdown
 ```
 e. Maak IPv6 unicast routing mogelijk. 
+```
+R3(config)#ipv6 unicast-routing
+```
 f. Configureer OSPFv3 op R3 en maak van de LAN-interface een passieve interface.
+```
+R3(config-rtr)#int s0/1/0
+R3(config-if)#ipv6 ospf 10 area 0
+R3(config-if)#int s0/1/1
+R3(config-if)#ipv6 ospf 10 area 0
+R3(config)#ipv6 router ospf 10
+R3(config-rtr)#passive-interface g0/0/1
+```
+
+Voeg hier tussen de runningconfiguration file van R3.
+```
+```
