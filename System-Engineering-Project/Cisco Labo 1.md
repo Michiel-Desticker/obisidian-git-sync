@@ -299,7 +299,7 @@ transport input telnet
 end
 ```
 
-Stap 3: configureer de basisinstellingen op alle routers
+### Stap 3: configureer de basisinstellingen op alle routers
 
 a. Maak DNS lookup ongedaan. 
 ```
@@ -327,25 +327,44 @@ R1(config)#user admin password classadm
 ```
 g. Configureer class als het privileged EXEC geëncrypteerd paswoord. 
 ```
-
+R1(config)#enable secret class
 ```
 h. Configureer cisco als het console paswoord en maak login mogelijk.
 ```
-
+R1(config)#line console 0
+R1(config-line)#password cisco
+R1(config-line)#login
 ```
 i. Maak login op de VTY-lijnen mogelijk door gebruik te maken van de lokale database. 
 ```
-
+R1(config-line)#line vty 0 15
+R1(config-line)#login local
 ```
 j. Genereer een crypto rsa key voor ssh, gebruik makend van een modulus grootte van 1024 bits. k. Verander de transport input op alle VTY-lijnen naar alleen SSH en Telnet
 ```
+R1(config)#crypto key generate rsa
 
+The name for the keys will be: R1.ccna-lab.com
+
+Choose the size of the key modulus in the range of 360 to 2048 for your
+
+General Purpose Keys. Choosing a key modulus greater than 512 may take
+
+a few minutes.
+
+  
+
+How many bits in the modulus [512]: 1024
+
+% Generating 1024 bit RSA keys, keys will be non-exportable...[OK]
 ```
 k. Verander de transport input op alle VTY-lijnen naar alleen SSH en Telnet
 ```
-
+R1(config)#line vty 0 15
+R1(config-line)#transport input ssh
+R1(config-line)#transport input telnet
 ```
-Stap 4: configureer IPv6 instellingen op R1
+### Stap 4: configureer IPv6 instellingen op R1
 
 a. Configureer de IPv6 unicast adressen op de volgende interfaces: G0/0, G0/1, S0/0/0 en S0/0/1. 
 b. Configureer de IPv6 link-local adressen op de volgende interfaces: G0/0, G0/1, S0/0/0 en S0/0/1. Gebruik FE80::1 voor de link-local adressen op alle vier interfaces. 
