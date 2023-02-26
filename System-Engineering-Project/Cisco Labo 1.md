@@ -44,7 +44,34 @@ S1(config-line)#password cisco
 S1(config-line)#login
 ```
 i. Maak login op de VTY-lijnen mogelijk door gebruik te maken van de lokale database.
+```
+S1(config-line)#line vty 0 15
+S1(config-line)#password cisco
+S1(config-line)#login local
+```
 j. Genereer een crypto rsa key voor ssh, gebruik makend van een modulus grootte van 1024 bits.
+```
+S1(config)#crypto key generate rsa
+
+The name for the keys will be: S1.ccna-lab.com
+
+Choose the size of the key modulus in the range of 360 to 2048 for your
+
+General Purpose Keys. Choosing a key modulus greater than 512 may take
+
+a few minutes.
+
+  
+
+How many bits in the modulus [512]: 1024
+
+% Generating 1024 bit RSA keys, keys will be non-exportable...[OK]
+```
 k. Verander de transport input op alle VTY-lijnen naar alleen SSH en Telnet.
+```
+S1(config)#line vty 0 15
+S1(config-line)#transport input ssh
+S1(config-line)#transport input telnet
+```
 l. Wijs een IPv6 adres toe aan VLAN 1 overeenkomstig de adrestabel.
 Voeg hier tussen de runningconfiguration file van S1.
