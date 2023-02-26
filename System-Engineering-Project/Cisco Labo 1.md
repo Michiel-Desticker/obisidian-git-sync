@@ -81,6 +81,7 @@ S1(config)#sdm prefer dual-ipv4-and-ipv6 default
 S1#reload
 S1(config)#interface vlan 1
 S1(config-if)#ipv6 address 2001:DB8:ACAD:A::A/64
+S1(config-if)#no shutdown
 ```
 
 Voeg hier tussen de runningconfiguration file van S1.
