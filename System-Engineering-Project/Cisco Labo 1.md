@@ -419,7 +419,7 @@ g. Configureer OSPFv3 op R2 en zorg dat de default route doorgegeven wordt op de
 - Configuratie zie R1 en voeg een lijn toe, onder:
 ```
 R(config)# ipv6 router ospf 10 
-R(config-rtr)# passive interface G0/0/0 (indien G0/0/0 de passieve interface is) 
+R(config-rtr)# passive-interface G0/0/0 (indien G0/0/0 de passieve interface is) 
 R(config-rtr)#default-information originate
 ```
 
@@ -685,7 +685,7 @@ R2(config-if)#no shutdown
 ```
 e. Maak IPv6 unicast routing mogelijk.
 ```
-
+R2(config)#ipv6 unicast-routing
 ```
 f. Maak een default route die gebruik maakt van de loopback interface Lo1 (deze dient ter simulatie van een internetconnectie).
 ```
@@ -700,3 +700,247 @@ R(config-rtr)#default-information originate
 ```
 
 Voeg hier tussen de runningconfiguration file van R2.
+```
+R2#show run
+
+Building configuration...
+
+  
+
+Current configuration : 1463 bytes
+
+!
+
+version 15.4
+
+no service timestamps log datetime msec
+
+no service timestamps debug datetime msec
+
+service password-encryption
+
+!
+
+hostname R2
+
+!
+
+!
+
+!
+
+enable secret 5 $1$mERr$9cTjUIEqNGurQiFU.ZeCi1
+
+!
+
+!
+
+!
+
+!
+
+!
+
+!
+
+no ip cef
+
+ipv6 unicast-routing
+
+!
+
+no ipv6 cef
+
+!
+
+!
+
+!
+
+username admin password 7 0822404F1A0A04131F
+
+!
+
+!
+
+!
+
+!
+
+!
+
+!
+
+!
+
+!
+
+no ip domain-lookup
+
+ip domain-name ccna-lab.com
+
+!
+
+!
+
+spanning-tree mode pvst
+
+!
+
+!
+
+!
+
+!
+
+!
+
+!
+
+interface Loopback1
+
+no ip address
+
+ipv6 address 2001:DB8:AAAA:4::1/64
+
+!
+
+interface GigabitEthernet0/0/0
+
+no ip address
+
+duplex auto
+
+speed auto
+
+shutdown
+
+!
+
+interface GigabitEthernet0/0/1
+
+no ip address
+
+duplex auto
+
+speed auto
+
+shutdown
+
+!
+
+interface GigabitEthernet0/0/2
+
+no ip address
+
+duplex auto
+
+speed auto
+
+shutdown
+
+!
+
+interface Serial0/1/0
+
+no ip address
+
+ipv6 address FE80::2 link-local
+
+ipv6 address 2001:DB8:AAAA:1::2/64
+
+ipv6 ospf 10 area 0
+
+!
+
+interface Serial0/1/1
+
+no ip address
+
+ipv6 address FE80::2 link-local
+
+ipv6 address 2001:DB8:AAAA:2::2/64
+
+ipv6 ospf 10 area 0
+
+clock rate 128000
+
+!
+
+interface Vlan1
+
+no ip address
+
+shutdown
+
+!
+
+ipv6 router ospf 10
+
+default-information originate
+
+log-adjacency-changes
+
+passive-interface GigabitEthernet0/0/1
+
+!
+
+ip classless
+
+!
+
+ip flow-export version 9
+
+!
+
+ipv6 route ::/0 Loopback1
+
+!
+
+!
+
+banner motd ^CToegang voor onbevoegden is verboden^C
+
+!
+
+!
+
+!
+
+!
+
+line con 0
+
+password 7 0822455D0A16
+
+login
+
+!
+
+line aux 0
+
+!
+
+line vty 0 4
+
+login local
+
+transport input telnet
+
+line vty 5 15
+
+login local
+
+transport input telnet
+
+!
+
+!
+
+!
+
+end
+```
+
+### Stap 6: configureer IPv6 instellingen op R3
+
