@@ -75,3 +75,8 @@ S1(config-line)#transport input telnet
 ```
 l. Wijs een IPv6 adres toe aan VLAN 1 overeenkomstig de adrestabel.
 Voeg hier tussen de runningconfiguration file van S1.
+```
+S1(config)#sdm prefer dual-ipv4-and-ipv6 default
+S1#reload
+
+```
