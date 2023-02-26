@@ -302,15 +302,49 @@ end
 Stap 3: configureer de basisinstellingen op alle routers
 
 a. Maak DNS lookup ongedaan. 
+```
+Router(config)#no ip domain lookup
+```
 b. Configureer een hostname. 
+```
+Router(config)#hostname R1
+```
 c. Wijs volgende domeinnaam toe: ccna-lab.com. 
+```
+R1(config)#ip domain name ccna-lab.com
+```
 d. Encrypteer de plain-text paswoorden.
+```
+R1(config)#service password-encryption
+```
 e. Maak een MOTD-banner die de gebruikers waarschuwt: “Toegang voor onbevoegden is verboden”. 
+```
+R1(config)#banner motd "Toegang voor onbevoegden is verboden"
+```
 f. Maak een lokale user database met een gebruikersnaam admin en paswoord classadm. 
+```
+R1(config)#user admin password classadm
+```
 g. Configureer class als het privileged EXEC geëncrypteerd paswoord. 
-h. Configureer cisco als het console paswoord en maak login mogelijk.
-i. Maak login op de VTY-lijnen mogelijk door gebruik te maken van de lokale database. j. Genereer een crypto rsa key voor ssh, gebruik makend van een modulus grootte van 1024 bits. k. Verander de transport input op alle VTY-lijnen naar alleen SSH en Telnet
+```
 
+```
+h. Configureer cisco als het console paswoord en maak login mogelijk.
+```
+
+```
+i. Maak login op de VTY-lijnen mogelijk door gebruik te maken van de lokale database. 
+```
+
+```
+j. Genereer een crypto rsa key voor ssh, gebruik makend van een modulus grootte van 1024 bits. k. Verander de transport input op alle VTY-lijnen naar alleen SSH en Telnet
+```
+
+```
+k. Verander de transport input op alle VTY-lijnen naar alleen SSH en Telnet
+```
+
+```
 Stap 4: configureer IPv6 instellingen op R1
 
 a. Configureer de IPv6 unicast adressen op de volgende interfaces: G0/0, G0/1, S0/0/0 en S0/0/1. 
@@ -348,5 +382,8 @@ g. Configureer OSPFv3 op R2 en zorg dat de default route doorgegeven wordt op de
 - Configuratie zie R1 en voeg een lijn toe, onder:
 ```
 R(config)# ipv6 router ospf 10 
-R(config-rtr)# passive interface G0/0/0 (indien G0/0/0 de passieve interface is) R(config-rtr)#default-information originate
+R(config-rtr)# passive interface G0/0/0 (indien G0/0/0 de passieve interface is) 
+R(config-rtr)#default-information originate
 ```
+
+Voeg hier tussen de runningconfiguration file van R2.
