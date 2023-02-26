@@ -665,10 +665,28 @@ end
 ### Stap 5: configureer IPv6 instellingen op R2
 
 a. Configureer de IPv6 unicast adressen op de volgende interfaces: Lo1, S0/0/0 en S0/0/1. 
+```
+R2(config)#interface s0/1/1
+R2(config-if)#ipv6 address 2001:DB8:AAAA:2::2/64
+R2(config-if)#no shutdown
+```
 b. Configureer de IPv6 link-local adressen op de volgende interfaces: S0/0/0 en S0/0/1. Gebruik FE80::2 voor de link-local adressen op alle twee interfaces. 
+```
+R2(config-if)#ipv6 address FE80::2 link-local
+```
 c. Zet de clock rate op S0/0/1 op 128000. 
+```
+R2(config-if)#interface s0/1/1
+R2(config-if)#clock rate 128000
+```
 d. Zorg ervoor dat de interfaces IPv6-pakketten kunnen versturen. 
+```
+R2(config-if)#no shutdown
+```
 e. Maak IPv6 unicast routing mogelijk.
+```
+
+```
 f. Maak een default route die gebruik maakt van de loopback interface Lo1 (deze dient ter simulatie van een internetconnectie).
 ```
 R(config)# ipv6 route ::/0 Lo1
@@ -677,5 +695,8 @@ g. Configureer OSPFv3 op R2 en zorg dat de default route doorgegeven wordt op de
 - Configuratie zie R1 en voeg een lijn toe, onder:
 ```
 R(config)# ipv6 router ospf 10 
-R(config-rtr)# passive interface G0/0/0 (indien G0/0/0 de passieve interface is) R(config-rtr)#default-information originate
+R(config-rtr)# passive interface G0/0/0 (indien G0/0/0 de passieve interface is) 
+R(config-rtr)#default-information originate
 ```
+
+Voeg hier tussen de runningconfiguration file van R2.
