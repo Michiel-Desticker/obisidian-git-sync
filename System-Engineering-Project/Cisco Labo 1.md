@@ -977,4 +977,233 @@ R3(config-rtr)#passive-interface g0/0/1
 
 Voeg hier tussen de runningconfiguration file van R3.
 ```
+R3#show run
+
+Building configuration...
+
+  
+
+Current configuration : 1392 bytes
+
+!
+
+version 15.4
+
+no service timestamps log datetime msec
+
+no service timestamps debug datetime msec
+
+service password-encryption
+
+!
+
+hostname R3
+
+!
+
+!
+
+!
+
+enable secret 5 $1$mERr$9cTjUIEqNGurQiFU.ZeCi1
+
+!
+
+!
+
+!
+
+!
+
+!
+
+!
+
+no ip cef
+
+ipv6 unicast-routing
+
+!
+
+no ipv6 cef
+
+!
+
+!
+
+!
+
+username admin password 7 0822404F1A0A04131F
+
+!
+
+!
+
+!
+
+!
+
+!
+
+!
+
+!
+
+!
+
+no ip domain-lookup
+
+ip domain-name ccna-lab.com
+
+!
+
+!
+
+spanning-tree mode pvst
+
+!
+
+!
+
+!
+
+!
+
+!
+
+!
+
+interface GigabitEthernet0/0/0
+
+no ip address
+
+duplex auto
+
+speed auto
+
+shutdown
+
+!
+
+interface GigabitEthernet0/0/1
+
+no ip address
+
+duplex auto
+
+speed auto
+
+ipv6 address FE80::3 link-local
+
+ipv6 address 2001:DB8:CAFE:C::1/64
+
+!
+
+interface GigabitEthernet0/0/2
+
+no ip address
+
+duplex auto
+
+speed auto
+
+shutdown
+
+!
+
+interface Serial0/1/0
+
+no ip address
+
+ipv6 address FE80::3 link-local
+
+ipv6 address 2001:DB8:AAAA:3::2/64
+
+ipv6 ospf 10 area 0
+
+clock rate 128000
+
+!
+
+interface Serial0/1/1
+
+no ip address
+
+ipv6 address FE80::3 link-local
+
+ipv6 address 2001:DB8:AAAA:2::1/64
+
+ipv6 ospf 10 area 0
+
+!
+
+interface Vlan1
+
+no ip address
+
+shutdown
+
+!
+
+ipv6 router ospf 10
+
+log-adjacency-changes
+
+passive-interface GigabitEthernet0/0/1
+
+!
+
+ip classless
+
+!
+
+ip flow-export version 9
+
+!
+
+!
+
+!
+
+banner motd ^CToegang voor onbevoegden is verboden^C
+
+!
+
+!
+
+!
+
+!
+
+line con 0
+
+password 7 0822455D0A16
+
+login
+
+!
+
+line aux 0
+
+!
+
+line vty 0 4
+
+login local
+
+transport input telnet
+
+line vty 5 15
+
+login local
+
+transport input telnet
+
+!
+
+!
+
+!
+
+end
 ```
