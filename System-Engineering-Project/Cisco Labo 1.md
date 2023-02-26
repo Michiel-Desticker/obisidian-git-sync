@@ -944,3 +944,22 @@ end
 
 ### Stap 6: configureer IPv6 instellingen op R3
 
+a. Configureer de IPv6 unicast adressen op de volgende interfaces: G0/1, S0/0/0 en S0/0/1. 
+```
+R3(config)#interface g0/0/1
+R3(config-if)#ipv6 address 2001:DB8:CAFE:C::1/64
+```
+b. Configureer de IPv6 link-local adressen op de volgende interfaces: G0/1, S0/0/0 en S0/0/1. Gebruik FE80::3 voor de link-local adressen op alle drie interfaces. 
+```
+R3(config-if)#ipv6 address FE80::3 link-local
+```
+c. Zet de clock rate op S0/0/0 op 128000. 
+```
+
+```
+d. Zorg ervoor dat de interfaces IPv6-pakketten kunnen versturen. 
+```
+R3(config-if)#no shutdown
+```
+e. Maak IPv6 unicast routing mogelijk. 
+f. Configureer OSPFv3 op R3 en maak van de LAN-interface een passieve interface.
