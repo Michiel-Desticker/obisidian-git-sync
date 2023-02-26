@@ -384,14 +384,18 @@ R1(config-if)#interface s0/1/0
 R1(config-if)#clock rate 128000
 ```
 d. Zorg ervoor dat de interfaces IPv6-pakketten kunnen versturen. 
+```
+R1(config-if)#no shutdown
+```
 e. Maak IPv6 unicast routing mogelijk:
 ```
-R(config)# ipv6 unicast-router
+R(config)# ipv6 unicast-routing
 ```
 f. Configureer OSPFv3 op R1 en zorg dat de LAN-interfaces passieve interfaces zijn.
 - Configuratie OSPFv3:
 	```
-	R(config)# ipv6 router ospf 10 R(config-rtr)# passive interface G0/0/0 (indien G0/0/0 de passieve interface is)
+	R(config)# ipv6 router ospf 10 
+	R(config-rtr)# passive interface G0/0/0 (indien G0/0/0 de passieve interface is)
 	```
 - Dan op elke actieve interface:
 	```
