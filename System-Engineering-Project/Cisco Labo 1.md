@@ -30,8 +30,19 @@ e. Maak een MOTD-banner die de gebruikers waarschuwt: “Toegang voor onbevoegde
 S1(config)#banner motd "Toegang voor onbevoegden is verboden"
 ```
 f. Maak een lokale user database met een gebruikersnaam admin en paswoord classadm.
+```
+S1(config)#user admin password classadm
+```
 g. Configureer class als het privileged EXEC geëncrypteerd paswoord.
+```
+S1(config)#enable secret class
+```
 h. Configureer cisco als het console paswoord en maak login mogelijk.
+```
+S1(config)#line console 0
+S1(config-line)#password cisco
+S1(config-line)#login
+```
 i. Maak login op de VTY-lijnen mogelijk door gebruik te maken van de lokale database.
 j. Genereer een crypto rsa key voor ssh, gebruik makend van een modulus grootte van 1024 bits.
 k. Verander de transport input op alle VTY-lijnen naar alleen SSH en Telnet.
