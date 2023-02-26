@@ -81,3 +81,221 @@ S1#reload
 S1(config)#interface vlan 1
 S1(config-if)#ipv6 address 2001:DB8:ACAD:A::A/64
 ```
+
+Voeg hier tussen de runningconfiguration file van S1.
+```
+S1#show run
+
+Building configuration...
+
+  
+
+Current configuration : 1464 bytes
+
+!
+
+version 15.0
+
+no service timestamps log datetime msec
+
+no service timestamps debug datetime msec
+
+service password-encryption
+
+!
+
+hostname S1
+
+!
+
+!
+
+enable secret 5 $1$mERr$9cTjUIEqNGurQiFU.ZeCi1
+
+!
+
+!
+
+!
+
+no ip domain-lookup
+
+ip domain-name ccna-lab.com
+
+!
+
+username admin privilege 1 password 7 0822404F1A0A04131F
+
+!
+
+!
+
+!
+
+spanning-tree mode pvst
+
+spanning-tree extend system-id
+
+!
+
+interface FastEthernet0/1
+
+!
+
+interface FastEthernet0/2
+
+!
+
+interface FastEthernet0/3
+
+!
+
+interface FastEthernet0/4
+
+!
+
+interface FastEthernet0/5
+
+!
+
+interface FastEthernet0/6
+
+!
+
+interface FastEthernet0/7
+
+!
+
+interface FastEthernet0/8
+
+!
+
+interface FastEthernet0/9
+
+!
+
+interface FastEthernet0/10
+
+!
+
+interface FastEthernet0/11
+
+!
+
+interface FastEthernet0/12
+
+!
+
+interface FastEthernet0/13
+
+!
+
+interface FastEthernet0/14
+
+!
+
+interface FastEthernet0/15
+
+!
+
+interface FastEthernet0/16
+
+!
+
+interface FastEthernet0/17
+
+!
+
+interface FastEthernet0/18
+
+!
+
+interface FastEthernet0/19
+
+!
+
+interface FastEthernet0/20
+
+!
+
+interface FastEthernet0/21
+
+!
+
+interface FastEthernet0/22
+
+!
+
+interface FastEthernet0/23
+
+!
+
+interface FastEthernet0/24
+
+!
+
+interface GigabitEthernet0/1
+
+!
+
+interface GigabitEthernet0/2
+
+!
+
+interface Vlan1
+
+no ip address
+
+ipv6 address 2001:DB8:ACAD:A::A/64
+
+shutdown
+
+!
+
+banner motd ^CToegang voor onbevoegden is verboden^C
+
+!
+
+!
+
+!
+
+!
+
+!
+
+line con 0
+
+password 7 0822455D0A16
+
+login
+
+!
+
+line vty 0 4
+
+password 7 0822455D0A16
+
+login local
+
+transport input telnet
+
+line vty 5 15
+
+password 7 0822455D0A16
+
+login local
+
+transport input telnet
+
+!
+
+!
+
+!
+
+!
+
+end
+```
+
