@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "System-Engineering-Project/Cisco Labo 1.md",
+                "file": "System-Engineering-Project/Vagrant Almalinux.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "System-Engineering-Project/Cisco Labo 1.md",
+                "file": "System-Engineering-Project/Vagrant Almalinux.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "System-Engineering-Project/Cisco Labo 1.md",
+                "file": "System-Engineering-Project/Vagrant Almalinux.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "System-Engineering-Project/Cisco Labo 1.md"
+                "file": "System-Engineering-Project/Vagrant Almalinux.md"
               }
             }
           },
@@ -166,13 +166,13 @@
   },
   "active": "d482bb83a895c8f8",
   "lastOpenFiles": [
+    "System-Engineering-Project/Cisco Labo 1.md",
+    "System-Engineering-Project/Vagrant Almalinux.md",
+    "Attachments/labo1-ipconfig.png",
     "Attachments/labo1-table.png",
     "Attachments/Pasted image 20230226152212.png",
-    "Attachments/labo1-ipconfig.png",
     "Attachments/Pasted image 20230226152100.png",
-    "System-Engineering-Project/Cisco Labo 1.md",
     "Attachments/Pasted image 20230226151148.png",
-    "System-Engineering-Project/Vagrant Almalinux.md",
     "Cybersecurity-Virtualisation/2. Virtual Networks.md",
     "Attachments/Pasted image 20230224100558.png",
     "System-Engineering-Project/Research_Wordpress.md",
