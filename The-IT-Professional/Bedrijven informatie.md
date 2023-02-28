@@ -6,7 +6,9 @@
 
 - itsme
 - Colruyt
-- 
+- WAVE: cloud solution dat TP Vision getransformeerd heeft in een een full display solution provider
+- Engie: live energy insights
+- Payconiq
 
 # Axi
 
