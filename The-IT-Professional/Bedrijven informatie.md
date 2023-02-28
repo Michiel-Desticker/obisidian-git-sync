@@ -2,7 +2,11 @@
 
 - Partnership with google cloud
 	- Google Professional Cloud Certified
-	- Professional Cloud 
+	- Professional Cloud Network Engineer?
+
+- itsme
+- Colruyt
+- 
 
 # Axi
 
