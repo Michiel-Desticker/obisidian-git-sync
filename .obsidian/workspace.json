@@ -8,31 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "d6a29909f172e2e9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "System-Engineering-Project/Cisco Labo 1.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5567659ea7c98527",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "VIC/InfluxDB + grafana.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "838b1859b08cd772",
+            "id": "3f219c4c8a8b32d3",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -43,8 +19,25 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
+      },
+      {
+        "id": "7c72435fa8325533",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "838b1859b08cd772",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "The-IT-Professional/02_27.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -189,13 +182,13 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "838b1859b08cd772",
+  "active": "3f219c4c8a8b32d3",
   "lastOpenFiles": [
-    "VIC/InfluxDB + grafana.md",
+    "The-IT-Professional/02_27.md",
     "The-IT-Professional/Bedrijven informatie.md",
+    "VIC/InfluxDB + grafana.md",
     "System-Engineering-Project/Cisco Labo 1.md",
     "VIC",
-    "The-IT-Professional/02_27.md",
     "System-Engineering-Project/Vagrant Almalinux.md",
     "Attachments/labo1-ipconfig.png",
     "Attachments/labo1-table.png",
