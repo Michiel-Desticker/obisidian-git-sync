@@ -71,3 +71,6 @@ Orbid Cloud
 - **geautomatiseerd en schaalbaar cloud platform** dat cloud computing, netwerk en storage
 - Directe link met andere publieke cloud services en cloud oplossingen
 - Hoge flexibiliteit, snelheid en betrouwbaarheid
+
+‘**GROW’**: **G**oesting, **R**esultaatgericht, **O**pen & Eerlijk en **W**erken in team
+
