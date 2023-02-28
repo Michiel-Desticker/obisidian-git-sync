@@ -1,8 +1,15 @@
 
 # Algemene vragen
 
-- Wat is de sam
+- Wat is de samenstelling van een team?
+- Stel dat ik hier zou beginnen, wat heeft de hoogste prioriteit de komende maanden?
+- Wat hebben mensen voor mij gedaan in deze functie?
+- Wat is het werkschema
+- Mogelijkheden om door te groeien
+- 
 # In The Pocket
+
+- a complete delivery organization that can design and deliver digital products and platforms from end to end
 
 - Partnership with google cloud
 	- Google Professional Cloud Certified
