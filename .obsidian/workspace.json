@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "838b1859b08cd772",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "The-IT-Professional/Bedrijven informatie.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "VIC/InfluxDB + grafana.md",
+                "file": "The-IT-Professional/Bedrijven informatie.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "VIC/InfluxDB + grafana.md",
+                "file": "The-IT-Professional/Bedrijven informatie.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "VIC/InfluxDB + grafana.md"
+                "file": "The-IT-Professional/Bedrijven informatie.md"
               }
             }
           },
@@ -177,10 +189,11 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "5567659ea7c98527",
+  "active": "838b1859b08cd772",
   "lastOpenFiles": [
-    "System-Engineering-Project/Cisco Labo 1.md",
     "VIC/InfluxDB + grafana.md",
+    "The-IT-Professional/Bedrijven informatie.md",
+    "System-Engineering-Project/Cisco Labo 1.md",
     "VIC",
     "The-IT-Professional/02_27.md",
     "System-Engineering-Project/Vagrant Almalinux.md",
