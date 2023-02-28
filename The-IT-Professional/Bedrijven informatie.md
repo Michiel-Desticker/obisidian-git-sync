@@ -19,7 +19,7 @@
 	- Google Professional Cloud Certified
 	- Professional Cloud Network Engineer?
 
-- Hoe ziet een internship eruit bij ITP?
+- Hoe ziet een internship voor IT Operations er uit bij ITP?
 
 - itsme
 - Colruyt
