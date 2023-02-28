@@ -29,8 +29,26 @@
 
 # Axi
 
+Meer dan 400 medewerkers
+
+**jarenlange ervaring in het ontwerp, de installatie, de configuratie, de implementatie en de monitoring van wired en wifi netwerken**.
+
+de uitrol van o.a. firewalls, network acces control, multi-factor authentication, SSL VPN, SSL certificaten, endpoint en server protection, identity & access management, single sign-on
+
+Private, hybrid en public cloud oplossingen op maat
+
+Voor wie:
+- Zorg
+- Retail
+- Industrie
+- Overheid
+- Services
+
 - kantoor in Gent
-- Persoonlijk o
+- Persoonlijk ontwikkelingsplan
+	- Opleidingen en workshops
 - bedrijfsauto en tankkaart
+
+Hoe ziet een internship als network engineer eruit?
 
 # Orbid
