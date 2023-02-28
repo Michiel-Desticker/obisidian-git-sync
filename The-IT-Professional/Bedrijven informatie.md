@@ -6,9 +6,13 @@
 - Wat hebben mensen voor mij gedaan in deze functie?
 - Wat is het werkschema
 - Mogelijkheden om door te groeien
-- 
+- Welke technologieën/tools?
+- opleidingen voorzien?
+- welke persoonlijke kwaliteiten?
+- Hoe ziet onboarding er uit?
 # In The Pocket
 
+- grootte: 117
 - a complete delivery organization that can design and deliver digital products and platforms from end to end
 
 - Partnership with google cloud
