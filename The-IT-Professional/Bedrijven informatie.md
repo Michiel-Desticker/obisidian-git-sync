@@ -64,3 +64,10 @@ Wat houdt consultancy werk in bij Axi?
 Grootte: 140
 
 up-to-date IT-omgeving, een moderne werkplek, het digitaliseren van bedrijfsprocessen en het vinden & ontwikkelen van talenten
+
+voornamelijk microsoft software (azure, teams, 365, sharepoint)
+
+Orbid Cloud
+- **geautomatiseerd en schaalbaar cloud platform** dat cloud computing, netwerk en storage
+- Directe link met andere publieke cloud services en cloud oplossingen
+- Hoge flexibiliteit, snelheid en betrouwbaarheid
