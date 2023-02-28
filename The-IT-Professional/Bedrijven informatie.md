@@ -31,6 +31,8 @@
 
 Meer dan 400 medewerkers
 
+Digital transformation
+
 **jarenlange ervaring in het ontwerp, de installatie, de configuratie, de implementatie en de monitoring van wired en wifi netwerken**.
 
 de uitrol van o.a. firewalls, network acces control, multi-factor authentication, SSL VPN, SSL certificaten, endpoint en server protection, identity & access management, single sign-on
@@ -53,4 +55,12 @@ Hoe ziet een internship als network engineer eruit?
 
 Wat houdt consultancy werk in bij Axi?
 
+- Colruyt:
+	- Colruyt direct
+	- Mobiel kassasysteem collect & go
+
 # Orbid
+
+Grootte: 140
+
+up-to-date IT-omgeving, een moderne werkplek, het digitaliseren van bedrijfsprocessen en het vinden & ontwikkelen van talenten
