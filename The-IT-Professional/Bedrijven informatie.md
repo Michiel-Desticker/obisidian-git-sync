@@ -29,4 +29,8 @@
 
 # Axi
 
+- kantoor in Gent
+- Persoonlijk o
+- bedrijfsauto en tankkaart
+
 # Orbid
