@@ -4,34 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "f64662d911e0e792",
+        "id": "cd13f51b6d00508a",
         "type": "tabs",
         "children": [
           {
-            "id": "3f219c4c8a8b32d3",
+            "id": "aa93ecc6aa35a8b4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "The-IT-Professional/Bedrijven informatie.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "7c72435fa8325533",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "838b1859b08cd772",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "The-IT-Professional/02_27.md",
+                "file": "System-Engineering-Project/Address table.md",
                 "mode": "source",
                 "source": false
               }
@@ -103,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "The-IT-Professional/Bedrijven informatie.md",
+                "file": "System-Engineering-Project/Address table.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "The-IT-Professional/Bedrijven informatie.md",
+                "file": "System-Engineering-Project/Address table.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "The-IT-Professional/Bedrijven informatie.md"
+                "file": "System-Engineering-Project/Address table.md"
               }
             }
           },
@@ -182,8 +164,9 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "3f219c4c8a8b32d3",
+  "active": "aa93ecc6aa35a8b4",
   "lastOpenFiles": [
+    "System-Engineering-Project/Address table.md",
     "The-IT-Professional/02_27.md",
     "The-IT-Professional/Bedrijven informatie.md",
     "VIC/InfluxDB + grafana.md",
