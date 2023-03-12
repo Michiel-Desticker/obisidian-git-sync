@@ -134,4 +134,9 @@ S1(config-if)#int g0/1
 S1(config-if)#switchport mode access
 
 S1(config-if)#switchport access vlan 50
+
+S1(config-if)#int g0/1
+
+S1(config-if)#switchport mode trunk
 ```
+
