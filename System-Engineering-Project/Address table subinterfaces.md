@@ -72,3 +72,66 @@ S1(config)#ip default-gateway 192.168.8.209
 
 ```
 
+```
+S1(config)#int f0/7
+
+S1(config-if)#switchport mode access
+
+S1(config-if)#switchport access vlan 40
+
+S1(config-if)#int f0/8
+
+S1(config-if)#switchport mode access
+
+S1(config-if)#switchport access vlan 40
+
+S1(config-if)#int f0/1 - 15
+
+S1(config-if)#int f0/1
+
+S1(config-if)#switchport mode access
+
+S1(config-if)#switchport access vlan 20
+
+S1(config-if)#int f0/2
+
+S1(config-if)#switchport mode access
+
+S1(config-if)#switchport access vlan 20
+
+S1(config-if)#int f0/4
+
+S1(config-if)#switchport mode access
+
+S1(config-if)#switchport access vlan 20
+
+S1(config-if)#int f0/5
+
+S1(config-if)#switchport mode access
+
+S1(config-if)#switchport access vlan 20
+
+S1(config-if)#int f0/6
+
+S1(config-if)#switchport mode access
+
+S1(config-if)#switchport access vlan 20
+
+S1(config-if)#int f0/9
+
+S1(config-if)#switchport mode access
+
+S1(config-if)#switchport access vlan 30
+
+S1(config-if)#int f0/10
+
+S1(config-if)#switchport mode access
+
+S1(config-if)#switchport access vlan 30
+
+S1(config-if)#int g0/1
+
+S1(config-if)#switchport mode access
+
+S1(config-if)#switchport access vlan 50
+```
