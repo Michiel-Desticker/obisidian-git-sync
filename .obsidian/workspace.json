@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "System-Engineering-Project/Address table subinterfaces.md",
+                "file": "System-Engineering-Project/Network configuration.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "System-Engineering-Project/Address table subinterfaces.md",
+                "file": "System-Engineering-Project/Network configuration.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "System-Engineering-Project/Address table subinterfaces.md",
+                "file": "System-Engineering-Project/Network configuration.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "System-Engineering-Project/Address table subinterfaces.md"
+                "file": "System-Engineering-Project/Network configuration.md"
               }
             }
           },
@@ -167,7 +167,7 @@
   },
   "active": "aa93ecc6aa35a8b4",
   "lastOpenFiles": [
-    "System-Engineering-Project/Address table subinterfaces.md",
+    "System-Engineering-Project/Network configuration.md",
     "The-IT-Professional/02_27.md",
     "The-IT-Professional/Bedrijven informatie.md",
     "VIC/InfluxDB + grafana.md",
