@@ -45,6 +45,26 @@ R1(config)#int g0/0/1
 R1(config-if)#no shutdown
 ```
 
+```
+R1(config)#ip dhcp pool Cast
+
+R1(dhcp-config)#network 192.168.8.0 255.255.255.128
+
+R1(dhcp-config)#default-router 192.168.8.1
+
+R1(dhcp-config)#dns-server 192.168.8.195
+
+R1(dhcp-config)#exit
+
+R1(config)#ip dhcp pool Crew
+
+R1(dhcp-config)#network 192.168.8.128 255.255.255.192
+
+R1(dhcp-config)#default-router 192.168.8.129
+
+R1(dhcp-config)#dns-server 192.168.8.195
+```
+
 ## Switch
 
 ```
