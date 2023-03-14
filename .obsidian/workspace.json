@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 362.5,
-    "collapsed": true
+    "width": 362.5
   },
   "right": {
     "id": "605959d54801d40d",
@@ -167,11 +166,11 @@
   },
   "active": "aa93ecc6aa35a8b4",
   "lastOpenFiles": [
+    "System-Engineering-Project/Cisco Labo 1.md",
     "System-Engineering-Project/Network configuration.md",
     "The-IT-Professional/02_27.md",
     "The-IT-Professional/Bedrijven informatie.md",
     "VIC/InfluxDB + grafana.md",
-    "System-Engineering-Project/Cisco Labo 1.md",
     "VIC",
     "System-Engineering-Project/Vagrant Almalinux.md",
     "Attachments/labo1-ipconfig.png",
