@@ -515,7 +515,27 @@ R1(config-router)#
 Router(config-if)# ip ospf process-id area area-id
 ```
 
-## Passieve inte
+### Passieve interface
+
 ```
 passive-interface
+```
+
+### Verifieer passieve interface
+
+```
+show ip protocols
+```
+
+### DR en BDR interface verificatie
+
+```
+show ip ospf interface
+```
+
+### Disable DR/BDR election process
+
+```
+R1(config)# interface GigabitEthernet 0/0/0
+R1(config-if)# ip ospf network point-to-point
 ```
