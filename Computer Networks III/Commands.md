@@ -458,3 +458,64 @@ BackboneFast                 is disabled
 Configured Pathcost method used is short
 (output omitted)
 ```
+
+## Module 2
+
+```
+R1(config)# router ospf 10
+
+R1(config-router)# ?
+
+  area   OSPF area parameters
+
+  auto-cost   Calculate OSPF interface cost according to bandwidth
+
+  default-information   Control distribution of default information
+
+  distance   Define an administrative distance
+
+  exit   Exit from routing protocol configuration mode
+
+  log-adjacency-changes   Log changes in adjacency state
+
+  neighbor   Specify a neighbor router
+
+  network   Enable routing on an IP network
+
+  no   Negate a command or set its defaults
+
+  passive-interface   Suppress routing updates on an interface
+
+  redistribute   Redistribute information from another routing protocol
+
+  router-id   router-id for this OSPF process
+```
+
+```
+Router(config-router)# network network-address wildcard-mask area area-id
+```
+
+### Specifieke interface
+
+```
+R1(config)# router ospf 10
+
+R1(config-router)# network 10.10.1.1 0.0.0.0 area 0
+
+R1(config-router)# network 10.1.1.5 0.0.0.0 area 0
+
+R1(config-router)# network 10.1.1.14 0.0.0.0 area 0
+
+R1(config-router)#
+```
+
+### OSPF Direct op de interface
+
+```
+Router(config-if)# ip ospf process-id area area-id
+```
+
+## Passieve inte
+```
+passive-interface
+```
