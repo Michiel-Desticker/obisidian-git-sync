@@ -4,47 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "cd13f51b6d00508a",
+        "id": "9d1176c5a2f26d0d",
         "type": "tabs",
         "children": [
           {
-            "id": "aa93ecc6aa35a8b4",
+            "id": "9f9bbc30fc9549a9",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "System-Engineering-Project/Network configuration.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "50cec419f07e375c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer Networks III/Commands.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "05dfbd299f05e5f9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cybersecurity-Virtualisation/4. Virtual Clones.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cybersecurity-Virtualisation/4. Virtual Clones.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cybersecurity-Virtualisation/4. Virtual Clones.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Cybersecurity-Virtualisation/4. Virtual Clones.md"
-              }
+              "state": {}
             }
           },
           {
@@ -189,10 +156,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "05dfbd299f05e5f9",
+  "active": "9f9bbc30fc9549a9",
   "lastOpenFiles": [
-    "Cybersecurity-Virtualisation/2. Virtual Networks.md",
     "Cybersecurity-Virtualisation/4. Virtual Clones.md",
+    "Cybersecurity-Virtualisation/2. Virtual Networks.md",
     "Computer Networks III/Commands.md",
     "VIC/InfluxDB + grafana.md",
     "System-Engineering-Project/Cisco Labo 1.md",
