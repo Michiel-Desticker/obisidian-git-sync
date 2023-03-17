@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "05dfbd299f05e5f9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cybersecurity-Virtualisation/4. Virtual Clones.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer Networks III/Commands.md",
+                "file": "Cybersecurity-Virtualisation/4. Virtual Clones.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer Networks III/Commands.md",
+                "file": "Cybersecurity-Virtualisation/4. Virtual Clones.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Computer Networks III/Commands.md"
+                "file": "Cybersecurity-Virtualisation/4. Virtual Clones.md"
               }
             }
           },
@@ -177,8 +189,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "50cec419f07e375c",
+  "active": "05dfbd299f05e5f9",
   "lastOpenFiles": [
+    "Computer Networks III/Commands.md",
+    "Cybersecurity-Virtualisation/4. Virtual Clones.md",
     "VIC/InfluxDB + grafana.md",
     "System-Engineering-Project/Cisco Labo 1.md",
     "System-Engineering-Project/Network configuration.md",
@@ -195,7 +209,6 @@
     "Attachments/Pasted image 20230224100558.png",
     "System-Engineering-Project/Research_Wordpress.md",
     "The-IT-Professional/02_13.md",
-    "Computer Networks III/Commands.md",
     "Data-Science-AI/0. Intro, studiewijzer.md",
     "Data-Science-AI/1. Basisbegrippen, steekproefonderzoek.md",
     "Cybersecurity-Virtualisation/1. Network Sniffing.md",
