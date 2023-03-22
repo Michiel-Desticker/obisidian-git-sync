@@ -4,23 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "9d1176c5a2f26d0d",
+        "id": "c559b9b90fba7bc7",
         "type": "tabs",
         "children": [
           {
-            "id": "9f9bbc30fc9549a9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cybersecurity-Virtualisation/4. Virtual Clones.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f28ff097aa29cf38",
+            "id": "804d4cdbd14d66e3",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -31,8 +19,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -82,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 362.5,
-    "collapsed": true
+    "width": 362.5
   },
   "right": {
     "id": "605959d54801d40d",
@@ -178,7 +164,7 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "f28ff097aa29cf38",
+  "active": "804d4cdbd14d66e3",
   "lastOpenFiles": [
     "Cybersecurity-Virtualisation/4. Virtual Clones.md",
     "IT2Business/03_22.md",
