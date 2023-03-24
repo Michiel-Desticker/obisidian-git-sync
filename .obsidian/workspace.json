@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 362.5
+    "width": 362.5,
+    "collapsed": true
   },
   "right": {
     "id": "605959d54801d40d",
@@ -164,7 +165,7 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "1f265dd5f750c402",
+  "active": "9eb2df65fbc1d65e",
   "lastOpenFiles": [
     "Cybersecurity-Virtualisation/2. Virtual Networks.md",
     "Cybersecurity-Virtualisation/5. Upgrade your skills.md",
