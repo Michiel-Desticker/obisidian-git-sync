@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "02809d1b82a6eef5",
+        "id": "930bb4273d999cca",
         "type": "tabs",
         "children": [
           {
-            "id": "bb56284880257dcb",
+            "id": "f50c44ea56e806f4",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cybersecurity-Virtualisation/5. Upgrade your skills.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -69,8 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 362.5,
-    "collapsed": true
+    "width": 362.5
   },
   "right": {
     "id": "605959d54801d40d",
@@ -86,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cybersecurity-Virtualisation/5. Upgrade your skills.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cybersecurity-Virtualisation/5. Upgrade your skills.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Cybersecurity-Virtualisation/5. Upgrade your skills.md"
-              }
+              "state": {}
             }
           },
           {
@@ -165,11 +156,11 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "bb56284880257dcb",
+  "active": "f50c44ea56e806f4",
   "lastOpenFiles": [
+    "Cybersecurity-Virtualisation/5. Upgrade your skills.md",
     "Cybersecurity-Virtualisation/2. Virtual Networks.md",
     "Cybersecurity-Virtualisation/4. Virtual Clones.md",
-    "Cybersecurity-Virtualisation/5. Upgrade your skills.md",
     "IT2Business/03_22.md",
     "Computer Networks III/Commands.md",
     "VIC/InfluxDB + grafana.md",
