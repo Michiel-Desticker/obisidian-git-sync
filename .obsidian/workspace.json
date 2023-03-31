@@ -11,8 +11,12 @@
             "id": "f50c44ea56e806f4",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "IT2Business/03_22.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "IT2Business/03_22.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "IT2Business/03_22.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "IT2Business/03_22.md"
+              }
             }
           },
           {
@@ -158,6 +166,7 @@
   },
   "active": "f50c44ea56e806f4",
   "lastOpenFiles": [
+    "The-IT-Professional/02_13.md",
     "Cybersecurity-Virtualisation/5. Upgrade your skills.md",
     "Cybersecurity-Virtualisation/2. Virtual Networks.md",
     "Cybersecurity-Virtualisation/4. Virtual Clones.md",
@@ -177,7 +186,6 @@
     "Attachments/Pasted image 20230226151148.png",
     "Attachments/Pasted image 20230224100558.png",
     "System-Engineering-Project/Research_Wordpress.md",
-    "The-IT-Professional/02_13.md",
     "Data-Science-AI/0. Intro, studiewijzer.md",
     "Data-Science-AI/1. Basisbegrippen, steekproefonderzoek.md",
     "Cybersecurity-Virtualisation/1. Network Sniffing.md",
