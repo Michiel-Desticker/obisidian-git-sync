@@ -10,7 +10,6 @@ VBoxManage storagectl "Debian" --name "SATA Controller" --add sata --controller 
 
 VBoxManage storageattach "Debian" --storagectl "SATA Controller" --port 0 --device 0 --type hdd --medium ".\Debian 11 (64bit).vdi"
 
-
 ```
 
 # Kali VM
@@ -24,6 +23,6 @@ VBoxManage modifyvm "Kali Linux" --nic1 bridged --bridgeadapter1 "Your Network A
 
 VBoxManage storagectl "Kali Linux" --name "SATA Controller" --add sata --controller IntelAhci
 
-VBoxManage storageattach "Kali Linux" --storagectl "SATA Controller" --port 0 --device 0 --type hdd --medium ""
+VBoxManage storageattach "Kali Linux" --storagectl "SATA Controller" --port 0 --device 0 --type hdd --medium ".\Kali Linux 2022.3 (64bit).vdi"
 
 ```
