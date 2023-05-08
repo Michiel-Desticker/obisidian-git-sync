@@ -42,9 +42,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "f55c2d6d930af66b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "The-IT-Professional/Bedrijven informatie.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -89,13 +101,20 @@
               "type": "starred",
               "state": {}
             }
+          },
+          {
+            "id": "536e3bdf65a74819",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 362.5,
-    "collapsed": true
+    "width": 362.5
   },
   "right": {
     "id": "605959d54801d40d",
@@ -111,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cybersecurity-Virtualisation/NPE.md",
+                "file": "The-IT-Professional/Bedrijven informatie.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cybersecurity-Virtualisation/NPE.md",
+                "file": "The-IT-Professional/Bedrijven informatie.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cybersecurity-Virtualisation/NPE.md"
+                "file": "The-IT-Professional/Bedrijven informatie.md"
               }
             }
           },
@@ -190,7 +209,7 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "a9c051e05b0de8f5",
+  "active": "f55c2d6d930af66b",
   "lastOpenFiles": [
     "Cybersecurity-Virtualisation/6. Static File Analysis.md",
     "Cybersecurity-Virtualisation/NPE.md",
