@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "b86f946aaf1d1238",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cybersecurity-Virtualisation/3. Wireless networks.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -93,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cybersecurity-Virtualisation/1. Network Sniffing.md",
+                "file": "Cybersecurity-Virtualisation/3. Wireless networks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cybersecurity-Virtualisation/1. Network Sniffing.md",
+                "file": "Cybersecurity-Virtualisation/3. Wireless networks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cybersecurity-Virtualisation/1. Network Sniffing.md"
+                "file": "Cybersecurity-Virtualisation/3. Wireless networks.md"
               }
             }
           },
@@ -172,8 +185,9 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "f55c2d6d930af66b",
+  "active": "b86f946aaf1d1238",
   "lastOpenFiles": [
+    "Cybersecurity-Virtualisation/3. Wireless networks.md",
     "Cybersecurity-Virtualisation/2. Virtual Networks.md",
     "Cybersecurity-Virtualisation/4. Virtual Clones.md",
     "Cybersecurity-Virtualisation/5. Upgrade your skills.md",
