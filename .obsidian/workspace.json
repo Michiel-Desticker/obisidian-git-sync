@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Data-Science-AI/1. Basisbegrippen, steekproefonderzoek.md",
+                "file": "Cybersecurity-Virtualisation/3. Wireless networks.md",
                 "mode": "source",
                 "source": false
               }
@@ -106,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Data-Science-AI/1. Basisbegrippen, steekproefonderzoek.md",
+                "file": "Cybersecurity-Virtualisation/3. Wireless networks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Data-Science-AI/1. Basisbegrippen, steekproefonderzoek.md",
+                "file": "Cybersecurity-Virtualisation/3. Wireless networks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Data-Science-AI/1. Basisbegrippen, steekproefonderzoek.md"
+                "file": "Cybersecurity-Virtualisation/3. Wireless networks.md"
               }
             }
           },
@@ -187,6 +187,7 @@
   },
   "active": "b86f946aaf1d1238",
   "lastOpenFiles": [
+    "Data-Science-AI/1. Basisbegrippen, steekproefonderzoek.md",
     "Cybersecurity-Virtualisation/5. Upgrade your skills.md",
     "Cybersecurity-Virtualisation/2. Virtual Networks.md",
     "Cybersecurity-Virtualisation/1. Network Sniffing.md",
@@ -212,7 +213,6 @@
     "Attachments/Pasted image 20230224100558.png",
     "System-Engineering-Project/Research_Wordpress.md",
     "Data-Science-AI/0. Intro, studiewijzer.md",
-    "Data-Science-AI/1. Basisbegrippen, steekproefonderzoek.md",
     "IT2Business/02_15.md",
     "Attachments/Pasted image 20230217110649.png",
     "Knowledge Base/Docker.md"
