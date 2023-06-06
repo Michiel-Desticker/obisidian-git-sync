@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cybersecurity-Virtualisation/4. Virtual Clones.md",
+                "file": "Cybersecurity-Virtualisation/6. Static File Analysis.md",
                 "mode": "source",
                 "source": false
               }
@@ -118,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cybersecurity-Virtualisation/4. Virtual Clones.md",
+                "file": "Cybersecurity-Virtualisation/6. Static File Analysis.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cybersecurity-Virtualisation/4. Virtual Clones.md",
+                "file": "Cybersecurity-Virtualisation/6. Static File Analysis.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -158,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cybersecurity-Virtualisation/4. Virtual Clones.md"
+                "file": "Cybersecurity-Virtualisation/6. Static File Analysis.md"
               }
             }
           },
@@ -199,13 +199,13 @@
   },
   "active": "77aa40be9601d730",
   "lastOpenFiles": [
+    "Cybersecurity-Virtualisation/4. Virtual Clones.md",
     "Data-Science-AI/1. Basisbegrippen, steekproefonderzoek.md",
     "Cybersecurity-Virtualisation/5. Upgrade your skills.md",
     "Cybersecurity-Virtualisation/2. Virtual Networks.md",
     "Cybersecurity-Virtualisation/1. Network Sniffing.md",
     "Cybersecurity-Virtualisation/NPE.md",
     "Cybersecurity-Virtualisation/3. Wireless networks.md",
-    "Cybersecurity-Virtualisation/4. Virtual Clones.md",
     "Cybersecurity-Virtualisation/6. Static File Analysis.md",
     "The-IT-Professional/Bedrijven informatie.md",
     "IT2Business/03_22.md",
